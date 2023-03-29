@@ -4,8 +4,8 @@
   | default @import url()
   |============================
 */
-/* @import url('./reset.css');
-@import url('./visually-hidden.css');
+@import url('./reset.css');
+/* @import url('./visually-hidden.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./advantages.css');

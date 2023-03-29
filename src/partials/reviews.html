@@ -1,36 +1,75 @@
-<section>
-  <h2 class="reviews-title">
-    <span class="review-title-decor" chocolate is loved
-  </h2>
-  <ul>
-    <li>
-      <img class="reviews-image" src="" width="80px" />
-      <h3 class="review-card-title">Victoria Dobrzhanska</h3>
-      ;
-      <p class="review-card-text">
-        I love this chocolate bar. Perfect combination of light crispy wafer,
-        covered in a thin layer chocolate.
-      </p>
-    </li>
-    <li>
-      <img class="reviews-image" src="" width="80px" />
-      <h3 class="review-card-title">Nazar Babenko</h3>
-      ;
-      <p class="review-card-text">
-        This chocolate confection is a delight! A delight! The wafer is light
-        and crisp, the hazelnut cream is smooth, and the chocolate is good.
-      </p>
-    </li>
-    <li>
-      <img class="reviews-image" src="" width="80px" />
-      <h3 class="review-card-title">Olena Kampusch</h3>
-      ;
-      <p class="review-card-text">
-        Chocolate is a family favourite treat. Love the delicious smooth
-        chocolate and the creaminess inside. The wafer is soft but crunchy.
-      </p>
-    </li>
-  </ul>
-  <input type="radio" name="selector" value="" checked />
-  <button type="button" class="review-button">Leave a review></button>
+<section class:section>
+  <div class="container">
+    <h2 class="reviews-title">
+      <span class="review-title-decor">chocolate</span> is loved
+    </h2>
+    <ul class="review-list">
+      <li class="review-card">
+        <img
+          class="review-card-image"
+          src="../img/desktop/chocolate-is-loved-1.png"
+          width="80"
+          alt="Victoria Dobrzhanska"
+        />
+        <h3 class="review-card-title">Victoria Dobrzhanska</h3>
+        <p class="review-card-text">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
+      </li>
+      <li class="review-card">
+        <img
+          class="review-card-image"
+          src="../img/desktop/chocolate-is-loved-2.png"
+          width="80"
+          alt="Nazar Babenko"
+        />
+        <h3 class="review-card-title">Nazar Babenko</h3>
+        <p class="review-card-text">
+          This chocolate confection is a delight! A delight! The wafer is light
+          and crisp, the hazelnut cream is smooth, and the chocolate is good.
+        </p>
+      </li>
+      <li class="review-card">
+        <img
+          class="review-card-image"
+          src="../img/desktop/2x/chocolate-is-loved-3@2x.png"
+          width="80"
+          alt="Olena Kampusch"
+        />
+        <h3 class="review-card-title">Olena Kampusch</h3>
+        <p class="review-card-text">
+          Chocolate is a family favourite treat. Love the delicious smooth
+          chocolate and the creaminess inside. The wafer is soft but crunchy.
+        </p>
+      </li>
+    </ul>
+    <form class="review-selector">
+      <label>
+        <input type="radio" name="radio-selector" value="1" checked />
+      </label>
+      <label>
+        <input type="radio" name="radio-selector" value="2" />
+      </label>
+      <label>
+        <input type="radio" name="radio-selector" value="3" />
+      </label>
+      <label>
+        <input type="radio" name="radio-selector" value="4" />
+      </label>
+      <button type="submit" class="review-selector-button">
+        Leave a review>
+      </button>
+    </form>
+
+    <!-- <label class="review-selector-label" for="radio">Leave a review</label>
+    <input
+      type="radio"
+      name="selector"
+      id="radio"
+      value="1"
+      checked
+      class="review-selector-input"
+    /> -->
+  </div>
 </section>
