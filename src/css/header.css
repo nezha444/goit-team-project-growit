@@ -3,7 +3,7 @@
 }
 .header {
   display: flex;
-  padding: 24px 0 32px;  
+  padding: 24px 0 32px;
 }
 .page-heder-container {
   display: flex;
@@ -47,7 +47,7 @@
   color: var(#111111);
 }
 .heder-social {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,7 +74,7 @@
     gap: 24px;
   }
   .heder-logo {
-    display: flex;    
+    display: flex;
   }
   .logo-tittle {
     font-family: 'Montserrat';
@@ -104,5 +104,35 @@
     align-items: center;
     letter-spacing: -0.02em;
     color: var(#111111);
+    transition: 250ms var(--cubic);
   }
+  .menu-link:hover,
+  .menu-link:focus {
+    color:var(--color-orange);
+
+}
+}
+
+.mobile-menu {
+  display: none;
+  background-color: rgba(30, 24, 35, 1);
+  flex-direction: column;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  padding: 136px 48px 0 48px;
+  overflow: auto;
+}
+.menu-modal {
+  display: flex;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
 }
