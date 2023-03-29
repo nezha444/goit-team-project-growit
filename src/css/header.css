@@ -77,6 +77,7 @@
     display: flex;
   }
   .logo-tittle {
+    margin-right: 4px;
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 700;
@@ -84,7 +85,7 @@
     line-height: calc(20 / 18);
     letter-spacing: -0.03em;
     width: 185px;
-    color: #111111;
+    color: var(--color-black);
   }
   .heder-nav {
     display: flex;
@@ -103,7 +104,7 @@
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
-    color: var(#111111);
+    color: var(--color-black);
     transition: 250ms var(--cubic);
   }
   .menu-link:hover,
@@ -111,14 +112,19 @@
     color:var(--color-orange);
 
 }
+.heder-social-svg {
+    margin-left: 20px;
+
+}
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
   background-color: rgba(30, 24, 35, 1);
   flex-direction: column;
+  
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 50%;
   width: 50%;
@@ -128,6 +134,7 @@
 }
 .menu-modal {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 14px;
@@ -135,4 +142,13 @@
   align-items: center;
   letter-spacing: -0.02em;
   color: var(--color-white);
+}
+
+.social-list-modal {
+    display: flex;
+
+}
+.mobile-menu-btn-closed {
+    position: absolute;
+
 }
