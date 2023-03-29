@@ -114,6 +114,9 @@
 }
 .heder-social-svg {
     margin-left: 20px;
+}
+.heder-social-svg {
+    fill: rgba(17, 17, 17, 1);
 
 }
 }
@@ -122,8 +125,8 @@
   display: flex;
   background-color: rgba(30, 24, 35, 1);
   flex-direction: column;
-  
-  position: fixed;
+  justify-content: space-between;  
+  position: fixed;  
   opacity: 1;
   top: 0;
   left: 50%;
@@ -150,5 +153,10 @@
 }
 .mobile-menu-btn-closed {
     position: absolute;
+
+}
+.social-list-modal {
+    display: flex;
+    outline: 1px solid white;
 
 }
