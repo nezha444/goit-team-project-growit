@@ -1,0 +1,108 @@
+.page-heder-container {
+  height: 24px;
+}
+.header {
+  display: flex;
+  padding: 24px 0 32px;  
+}
+.page-heder-container {
+  display: flex;
+}
+.heder-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: none;
+  justify-content: center;
+  gap: 24px;
+}
+.menu-item {
+}
+.menu-link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(#111111);
+}
+.heder-logo {
+  display: flex;
+}
+.burger-menu-btn {
+  width: 28px;
+  height: 28px;
+}
+.logo-tittle {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.03em;
+  color: var(#111111);
+}
+.heder-social {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-btn {
+    display: none;
+    width: 32px;
+    height: 32px;
+  }
+  .burger-menu-btn {
+    display: flex;
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .burger-menu-btn {
+    display: none;
+    width: 32px;
+    height: 32px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .heder-logo {
+    display: flex;    
+  }
+  .logo-tittle {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(20 / 18);
+    letter-spacing: -0.03em;
+    width: 185px;
+    color: #111111;
+  }
+  .heder-nav {
+    display: flex;
+    align-items: center;
+  }
+  .heder-social {
+    display: flex;
+    margin-left: 137px;
+    margin-right: 21px;
+  }
+  .menu-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(#111111);
+  }
+}
