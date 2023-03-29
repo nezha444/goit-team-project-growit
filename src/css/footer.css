@@ -39,6 +39,15 @@
   letter-spacing: -0.02em;
 }
 
+.footer-contact-link {
+  transition: color 250ms var(--cubic);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--color-orange);
+}
+
 .icons-list {
   display: flex;
   gap: 14px;
@@ -46,6 +55,12 @@
 
 .footer-icon {
   fill: var(--color-white);
+  transition: fill 250ms var(--cubic);
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: var(--color-orange);
 }
 
 .line {
