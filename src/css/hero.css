@@ -1,0 +1,90 @@
+.hero {
+    max-width: 335px;
+    height: 621px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/mobile/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding-bottom: 21px;
+}
+
+.hero_caption {
+    font-family: "Montserrat";
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: -0.03em;
+    text-align: start;
+    width: 290px;
+    height: 72px;
+}
+
+.hero_content {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    gap: 32px;
+}
+
+.hero_but {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+.how-its-made {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 100px;
+    padding: 12px 28px;
+}
+
+.scroll-down {
+    display: block;
+    color: var(--color-white);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: -0.03em;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/tablet/hero-img.jpg);
+        max-width: 704px;
+    }
+
+    .hero_caption {
+        width: 475px;
+        height: 102px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: calc(34 / 28);
+    }
+
+    .hero_content {
+        align-items: flex-start;
+    }
+
+    .hero_but {
+        justify-content: flex-end;
+    }
+
+    .buy-now-how-made {
+        display: flex;
+        gap: 14px;
+    }
+
+    .scroll-down-div {
+        margin-left: 153px;
+    }
+}
