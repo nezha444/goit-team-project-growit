@@ -67,7 +67,7 @@
      color: var(--color-orange);
  }
 
- .how-its-made {
+ .how-its-made-button-hero {
      display: block;
      margin: 0;
      background-color: transparent;
@@ -78,13 +78,13 @@
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .how-its-made:hover,
- .how-its-made:active {
+ .how-its-made-button-hero:hover,
+ .how-its-made-button-hero:active {
      color: var(--color-orange);
      border-color: var(--color-orange);
  }
 
- .how-its-made span {
+ .how-its-made-button-hero span {
      font-weight: 600;
      font-size: 14px;
      line-height: calc(17/14);
@@ -161,7 +161,7 @@
      (min-resolution: 192dpi),
      (min-resolution: 2dppx){
         .hero{
-            background-image: url(../img/tablet/2x/hero-img@2x.jpg);
+            background-image: url(../img/desktop/2x/hero-img@2x.jpg);
         }
      }
      .hero_caption {
@@ -195,7 +195,7 @@
          padding: 14px 40px;
      }
 
-     .how-its-made {
+     .how-its-made-button-hero {
          padding: 14px 40px;
      }
 
