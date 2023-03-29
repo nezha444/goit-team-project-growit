@@ -97,28 +97,43 @@
      font-size: 12px;
      line-height: calc(14 / 12);
      letter-spacing: -0.03em;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .scroll-down-text{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 
  .buy-now-how-made {
      display: flex;
      gap: 14px;
- }
-
- .scroll-down-div svg {
-     display: block;
-     width: 18px;
-     height: 18px;
-     fill: var(--color-orange);
- }
-
- .hero_svg {
+    }
+    
+    .scroll-down:hover .hero_svg,
+    .scroll-down:hover .hero_svg{
+        background-color: var(--color-orange);
+    }
+    
+    .hero_svg {
      background-color: var(--color-white);
      border-radius: 50%;
-     padding: 4px;
+     width: 28px;
+     height: 28px;
      margin-left: 12px;
- }
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .scroll-down-div svg {
+        display: block;
+        width: 11px;
+        height: 11px;
+        fill: var(--color-orange);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 
  .scroll-down:hover span {
      color: var(--color-orange);
@@ -127,7 +142,7 @@
  .scroll-down:hover .hero_svg,
  .scroll-down:hover .hero_svg svg {
      fill: var(--color-white);
-     background-color: var(--color-orange);
+
  }
 
  @media screen and (min-width:768px) and (max-width:1199px) {
@@ -193,9 +208,11 @@
          padding: 5px;
      }
 
-     .scroll-down span {
+     
+     .scroll-down>span {
          font-size: 14px;
          line-height: calc(18 / 14);
+
      }
  }
 
