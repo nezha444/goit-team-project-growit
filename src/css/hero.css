@@ -10,7 +10,13 @@
      padding-bottom: 21px;
      margin-bottom: 72px;
  }
-
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx){
+    .hero{
+        background-image: url(../img/mobile/2x/hero-img@2x.jpg);
+    }
+ }
  .hero_caption {
      font-family: "Montserrat";
      color: var(--color-white);
@@ -136,7 +142,13 @@
          max-width: 704px;
          padding-bottom: 40px;
      }
-
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx){
+        .hero{
+            background-image: url(../img/tablet/2x/hero-img@2x.jpg);
+        }
+     }
      .hero_caption {
          width: 475px;
          height: 102px;
@@ -192,6 +204,13 @@
          max-width: 1136px;
          padding-right: 40px;
 
+     }
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx){
+        .hero{
+            background-image: url(../img/desktop/2x/hero-img@2x.jpg);
+        }
      }
 
      .scroll-down-div {
