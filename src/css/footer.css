@@ -39,6 +39,15 @@
   letter-spacing: -0.02em;
 }
 
+.icons-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-icon {
+  fill: var(--color-white);
+}
+
 .line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
@@ -55,6 +64,11 @@
 }
 
 @media screen and (min-width: 767.98px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .slogan {
     font-size: 28px;
     line-height: calc(34 / 28);
@@ -66,6 +80,7 @@
 
   .footer-right {
     margin-left: auto;
+    margin-bottom: 50px;
   }
 
   .links-list {
@@ -80,10 +95,15 @@
   .footer-right {
     gap: 50px;
   }
+
+  .icons-list {
+    gap: 18px;
+  }
 }
 
 @media screen and (min-width: 1199.98px) {
   .footer-right {
     gap: 62px;
+    margin-bottom: 58px;
   }
 }
