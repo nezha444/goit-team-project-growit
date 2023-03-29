@@ -4,9 +4,9 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+/* @import url('./reset.css');
 @import url('./visually-hidden.css');
-/* @import url('./header.css');
+@import url('./header.css');
 @import url('./hero.css');
 @import url('./advantages.css');
 @import url('./unique-components.css');
@@ -16,14 +16,14 @@
 
 @import url('./reviews.css');
 /* @import url('./subscribe.css');
-@import url('./footer.css'); */
+@import url('./footer.css');
 
-/* @import url('./buy-now.css'); */
-/* @import url('./thank-you.css'); */
-/* @import url('./leave-a-review-about-our-chocolate.css'); */
-/* @import url('./thank-you-for-your-feedback.css'); */
-/* @import url('./explore-our-new-chocolate-first.css'); */
-/* @import url('./buy-now.css');  */
+@import url('./buy-now.css');
+@import url('./thank-you.css');
+@import url('./leave-a-review-about-our-chocolate.css');
+@import url('./thank-you-for-your-feedback.css');
+@import url('./explore-our-new-chocolate-first.css');
+@import url('./buy-now.css'); */
 
 body {
   font-family: 'Montserrat', sans-serif;
