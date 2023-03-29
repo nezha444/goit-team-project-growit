@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--color-dark-purple);
+}
+
+.slogan {
+  color: var(--color-white);
+}
+
+.accent-footer {
+  color: var(--color-orange);
+}
