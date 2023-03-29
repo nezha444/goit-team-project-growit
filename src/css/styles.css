@@ -43,28 +43,24 @@ body {
 .container {
   margin: 0 auto;
 }
-
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 20px;
     max-width: 375px;
   }
 }
-
 @media screen and (min-width: 767.98px) {
   .container {
     padding: 0 32px;
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1199.98px) {
   .container {
     padding: 0 32px;
     width: 1200px;
   }
 }
-
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
