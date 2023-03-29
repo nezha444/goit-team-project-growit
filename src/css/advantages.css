@@ -21,6 +21,10 @@
     margin-bottom: 22px;
 }
 
+.advantages-icon {
+    fill: var(--color-orange);
+}
+
 .advantages-title {
     color: var(--color-white);
     font-weight: 600;
