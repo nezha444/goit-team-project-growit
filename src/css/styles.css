@@ -16,10 +16,8 @@
 
 /* @import url('./reviews.css'); */
 
-/* @import url('./subscribe.css'); */
+@import url('./subscribe.css');
 /* @import url('./footer.css'); */
-
-
 
 /* @import url('./buy-now.css'); */
 /* @import url('./thank-you.css'); */
@@ -28,51 +26,42 @@
 /* @import url('./explore-our-new-chocolate-first.css'); */
 /* @import url('./buy-now.css');  */
 
-
-
-
-body{
+body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  line-height: calc( 18 / 14 );
-
+  line-height: calc(18 / 14);
 }
 
-:root{
+:root {
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --color-black: #111111;
-  --color-orange: #FD9222;
-  --color-dark-purple: #1E1823;
+  --color-orange: #fd9222;
+  --color-dark-purple: #1e1823;
   --color-white: #ffffff;
-  --color-light-orange: #FCF1E0;
+  --color-light-orange: #fcf1e0;
 }
 
-
-
-.container{
+.container {
   margin: 0 auto;
 }
-@media screen and (max-width: 767px ){
-  .container{
+@media screen and (max-width: 767px) {
+  .container {
     padding: 0 20px;
     max-width: 375px;
   }
 }
-@media screen and (min-width: 767.98px){
-  .container{
+@media screen and (min-width: 767.98px) {
+  .container {
     padding: 0 32px;
     width: 768px;
   }
 }
-@media screen and (min-width: 1199.98px){
-  .container{
+@media screen and (min-width: 1199.98px) {
+  .container {
     padding: 0 32px;
     width: 1200px;
   }
 }
-
-
-
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
