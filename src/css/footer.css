@@ -22,12 +22,7 @@
   color: var(--color-white);
   margin-bottom: 14px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-}
-
-.footer-contact-link {
-  color: var(--color-white);
+  letter-spacing: -0.02em;
 }
 
 .footer-right {
@@ -40,6 +35,8 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  color: var(--color-white);
+  letter-spacing: -0.02em;
 }
 
 .line {
@@ -53,6 +50,8 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  line-height: calc(16 / 14);
+  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 767.98px) {
@@ -72,5 +71,19 @@
   .links-list {
     flex-direction: row;
     gap: 24px;
+  }
+
+  .line {
+    margin-bottom: 24px;
+  }
+
+  .footer-right {
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .footer-right {
+    gap: 62px;
   }
 }
