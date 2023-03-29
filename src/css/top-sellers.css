@@ -14,11 +14,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: calc(24/20);
-    /* identical to box height, or 120% */
+    color: var(--color-black);
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 32px;
+}
+
+.top-sellers-header span {
+    color: var(--color-orange);
 }
 
 .top-sellers-items {
@@ -28,10 +32,6 @@
     justify-content: center;
     gap: 32px;
     margin-bottom: 20px;
-}
-
-.top-sellers-header {
-    color: var(--color-orange);
 }
 
 .top-sellers-items li:last-child {
@@ -57,7 +57,7 @@
     width: 120px;
 
     padding: 12px 28px;
-    display: block;
+    display: flex;
     border: none;
 
     border-radius: 100px;
@@ -158,7 +158,7 @@
 
         .top-sellers-descr-tabl-desktop {
             display: block;
-            width: 1136px;
+            width: 407px;
 
             /* height: 90px; */
         }
