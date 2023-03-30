@@ -1,5 +1,138 @@
 .unique-components {
-    padding-top: 72px;
-   background-color: red;
+  padding: 72px 20px;
+}
+
+.unique-components-title {
+  max-width: 283px;
+  margin: 0 auto 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.unique-components-title-accent {
+  color: var(--color-orange);
+}
+
+.unique-components-subtitle {
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.unique-components-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.unique-components-item {
+  max-width: 335px;
+  padding: 28px;
+  border-radius: 15px;
+}
+
+.uc-milk,
+.uc-ssc {
+  padding: 27px;
+}
+
+.unique-components-item > p {
+  text-align: start;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.unique-components-item > img {
+  margin: 0 auto 25px;
+}
+
+.uc-mc {
+  background-color: var(--color-orange);
+}
+
+.uc-mc > p {
+  color: var(--color-white);
+}
+
+.uc-nuts {
+  background-color: var(--color-black);
+}
+
+.uc-nuts > p {
+  color: var(--color-white);
+}
+
+.uc-milk,
+.uc-ssc {
+  border: 1px solid var(--color-orange);
+}
+
+@media screen and (min-width: 768px) {
+  .unique-components-item {
+    max-width: 336px;
+  }
+  .unique-components {
+    padding: 100px 0px;
+  }
+  .unique-components-title {
+    max-width: 411px;
+    margin: 0 auto 28px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: -0.03em;
+  }
+  .unique-components-subtitle {
+    display: block;
+    max-width: 486px;
+    margin: 0 auto 50px;
+  }
+
+  .unique-components-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .uc-mc {
+    order: 1;
+  }
+  .uc-ssc {
+    order: 2;
+  }
+  .uc-milk {
+    order: 3;
+  }
+  .uc-nuts {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .unique-components {
+    padding: 128px 0px;
+  }
+
+  .unique-components-item {
+    max-width: 270px;
+  }
+
+  .unique-components-list {
+    gap: 18px;
+  }
 }
  

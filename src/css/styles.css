@@ -14,7 +14,7 @@
 @import url('./our-products.css');
 @import url('./top-sellers.css');
 
-/* @import url('./reviews.css'); */
+@import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
 
@@ -24,6 +24,7 @@
  @import url('./thank-you-for-your-feedback.css'); 
  @import url('./explore-our-new-chocolate-first.css');
 @import url('./buy-now.css');  */
+
 
 body {
   font-family: 'Montserrat', sans-serif;
