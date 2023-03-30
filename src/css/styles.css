@@ -12,7 +12,7 @@
 @import url('./unique-components.css');
 @import url('./how-its-made.css');
 @import url('./our-products.css');
-@import url('./top-sellers.css'); */
+@import url('./top-sellers.css');
 
 @import url('./reviews.css');
 @import url('./subscribe.css');
@@ -23,7 +23,7 @@
 @import url('./leave-a-review-about-our-chocolate.css');
 @import url('./thank-you-for-your-feedback.css');
 @import url('./explore-our-new-chocolate-first.css');
-@import url('./buy-now.css'); */
+@import url('./buy-now.css');
 
 body {
   font-family: 'Montserrat', sans-serif;
