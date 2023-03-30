@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 1199.98px) {
   .subscribe-section {
-    background-image: url(../img/tablet/subcribe.jpg);
+    background-image: url(../img/desktop/subcribe-bg.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -47,6 +47,7 @@
 .headline-subscribe {
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: -0.03em;
   font-size: 20px;
   line-height: calc(24 / 20);
   color: var(--color-white);
@@ -65,7 +66,7 @@
 .subscribe-description {
   text-align: center;
   width: 326px;
-
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
   color: var(--color-white);
   text-align: center;
@@ -89,7 +90,7 @@
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: var(--color-light-orange);
-  color: var(--color-black);
+  color: var(--color-orange);
 }
 @media screen and (min-width: 767.98px) {
   .subscribe-button {
