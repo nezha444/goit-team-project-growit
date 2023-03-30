@@ -64,7 +64,13 @@
     letter-spacing: -0.03em;
     color: var(--color-black);
   }
-  
+  .heder-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 500px;
+  }
 
   .burger-menu-btn {
     display: flex;
@@ -85,6 +91,7 @@
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-left: 133px
   }
   .heder-logo {
     display: flex;
@@ -108,7 +115,7 @@
   .heder-social {
     display: flex;
     margin-left: 137px;
-    margin-right: 21px;
+    
   }
   .social-heder-link {
     fill: var(--color-black);
