@@ -18,11 +18,11 @@
     />
     
     <script type="module" crossorigin src="/goit-team-project-growit/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-d07aea5f.css">
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-7a35f2e6.css">
   </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
   <div class="container page-heder-container">
     <nav class="heder-nav">
       <a class="link heder-logo" href="./index.html">
@@ -109,7 +109,7 @@
     </ul>
   </div>
 </div>
- -->
+
 
   <main>
     <section class="hero">
@@ -120,7 +120,7 @@
         <div class="hero_but">
             <div class="buy-now-how-made">
                 <button class="btn-buy" type="button" data-modal-open>Buy now</button>
-                <a class="how-its-made" href="#howitsmade"><span>How it's made</span></a>
+                <a class="how-its-made-button-hero" href="#howitsmade"><span>How it's made</span></a>
             </div>
             <div class="scroll-down-div">
                 <a class="scroll-down" href="#footer">
@@ -136,8 +136,60 @@
 
     </div>
 </section>
-    <!--  -->
-    <!-- <section class="unique-components">
+    <section class="advantages-primary">
+  <div class="advantages container">
+    <h2 class="visually-hidden">Advantages</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item">
+        <div class="advantages-border-svg">
+          <svg class="advantages-icon" width="32" height="32">
+            <use
+              href="../img/icons.svg#icon-fluent-emoji-high-contrast_chocolate-bar"
+            ></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Unsurpassed taste</h3>
+        <p>
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-border-svg">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="../img/icons.svg#icon-coin"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Affordable price</h3>
+        <p>
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
+      <li class="advantages-item">
+        <div class="advantages-border-svg">
+          <svg class="advantages-icon" width="32" height="32">
+            <use href="../img/icons.svg#icon-la_utensil-spoon"></use>
+          </svg>
+        </div>
+        <h3 class="advantages-title">Own production</h3>
+        <p>
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="unique-components">
   <div class="container"><h2>IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
     <p>
       At Simply Chocolate, we believe that the secret to exceptional chocolate is
@@ -164,8 +216,8 @@
       </li>
     </ul></div>
 </section>
- -->
-    <!-- <section id="howitsmade" class="how-its-made">
+
+    <section id="howitsmade" class="how-its-made">
     <div class="container">
         <h1 class="title-howitsmade">HOW IT'S <span>MADE?</span></h1>
         <div class="wrapper-howitsmade">
@@ -212,8 +264,8 @@
         </div>
     </div>
 </section>
- -->
-    <!-- <section class="our-products container">
+
+    <section class="our-products container">
     <div class="our-products-wrapper">
         <h2 class="our-products-title"> <span>Our</span> products</h2>
         <ul class="our-products-list">
@@ -358,17 +410,41 @@
             <span class="slider-item"></span>
         </div>
     </div>
-</section> -->
-    <!-- <section class="section section-top-sellers">
+</section>
+    <section class="section section-top-sellers">
   <div class="container">
     <h2 class="top-sellers-header"><span>tOp</span> Sellers</h2>
     <ul class="list top-sellers-items">
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image1"
-        />
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ../img/desktop/top-sellers-1.jpg       1x,
+              ../img/desktop/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ../img/tablet/top-sellers-1.jpg       1x,
+              ../img/tablet/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/mobile/top-sellers-1.jpg       1x,
+              ../img/mobile/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image1"
+            loading="lazy"
+          />
+        </picture>
         <p class="top-sellers-descr">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
@@ -376,18 +452,66 @@
         </p>
       </li>
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image2"
-        />
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ../img/desktop/top-sellers-2.jpg       1x,
+              ../img/desktop/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ../img/tablet/top-sellers-2.jpg       1x,
+              ../img/tablet/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/mobile/top-sellers-2.jpg       1x,
+              ../img/mobile/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image2"
+            loading="lazy"
+          />
+        </picture>
       </li>
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image3"
-        />Last Item
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ../img/desktop/top-sellers-3.jpg       1x,
+              ../img/desktop/2x/top-sellers-3@2x.jpg 2x
+            "
+          />
+          <!-- <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ../img/tablet/top-sellers-3.jpg       1x,
+              ../img/tablet/2x/top-sellers-3@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ../img/mobile/top-sellers-3.jpg       1x,
+              ../img/mobile/2x/top-sellers-3@2x.jpg 2x
+            "
+          /> -->
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image3"
+            loading="lazy"
+          />
+        </picture>
       </li>
     </ul>
     <div class="top-series-descr-and-button">
@@ -396,19 +520,30 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="btn-buynow" type="button" data-modal-open>Buy now</button>
+      <button class="btn-buynow" type="button" data-modal-open-buynow>
+        Buy now
+      </button>
     </div>
   </div>
 </section>
- -->
-    <!-- ENOENT: no such file or directory, open '/home/runner/work/goit-team-project-growit/goit-team-project-growit/src/partials/reviews.html' -->
-    <!-- <section>
-  <h2 class="headline-subscribe">Subscribe</h2>
-</section>
- -->
-  </main>
 
-    <!-- <footer class="footer">
+    <!-- ENOENT: no such file or directory, open '/home/runner/work/goit-team-project-growit/goit-team-project-growit/src/partials/reviews.html' -->
+    <section class="subscribe-section">
+  <div class="container subscribe-wrapper">
+    <h2 class="headline-subscribe">explore our new chocolate first</h2>
+    <p class="subscribe-description">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button href="" class="subscribe-button" type="button">Subscribe</button>
+  </div>
+</section>
+
+  </main>
+  
+    <footer class="footer">
   <div class="container">
     <div class="footer-top">
       <h2 class="slogan">
@@ -460,7 +595,7 @@
     </ul>
   </div>
 </footer>
- -->
+
 
   <!-- modals -->
 
