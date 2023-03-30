@@ -132,6 +132,7 @@
   }
 
   .unique-components-list {
+    justify-content: center;
     gap: 18px;
   }
 }
