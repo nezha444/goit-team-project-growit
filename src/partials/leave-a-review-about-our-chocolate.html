@@ -1,15 +1,46 @@
 <div class="backdrop is-hidden animation-backdrop" data-modal-leave-a-review>
-  <div class="modal">
-    <div id="myModal-leave-a-review" class="modal">
-      <button class="modal-close-btn" data-modal-close-leave-a-review>
-        <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-      <h1 class="visually-hidden"></h1>
-      <h2 class=""><span>TEXT</span> leave-a-review</h2>
-
-      <p>Leave review</p>
-    </div>
+  <div class="modal review-modal">
+    <button
+      type="button"
+      class="close-btn-review"
+      data-modal-close-leave-a-review
+    >
+      <svg width="12" height="12" class="modal-close-btn-icon">
+        <use href="../img/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal-review-title">
+      Leave a review about
+      <span class="modal-review-accent">our chocolate</span>
+    </h2>
+    <form name="leave-a-review" class="review-form" pl>
+      <input
+        type="text"
+        minlength="2"
+        maxlength="30"
+        placeholder="Name"
+        class="modal-review-input"
+      />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="modal-review-input"
+      />
+      <input
+        type="tel"
+        minlength="9"
+        maxlength="9"
+        placeholder="Phone number"
+        class="modal-review-input"
+      />
+      <textarea
+        name="comment"
+        cols="30"
+        rows="3"
+        placeholder="Enter text"
+        class="review-textarea"
+      ></textarea>
+    </form>
+    <button type="submit" class="">Send</button>
   </div>
 </div>
