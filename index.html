@@ -24,7 +24,7 @@
 
     
     <script type="module" crossorigin src="/goit-team-project-growit/assets/index-2f2ce8de.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-d1170ec7.css">
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-8c90539d.css">
   </head>
   <body>
     <header class="header">
@@ -977,36 +977,124 @@
       </button>
       <h1 class="visually-hidden"></h1>
       <h2 class="header-buynow"><span>BUY</span> NOW</h2>
-      <ul class="list buynow-items">
-        <li class="buynow-item">
-          <picture>
-            <source
-              media="(min-width: 1199.98px)"
-              srcset="
-                ../img/desktop/buy-now-1.png       1x,
-                ../img/desktop/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <source
-              media="(min-width: 767.98px)"
-              srcset="
-                ../img/tablet/buy-now-1.png       1x,
-                ../img/tablet/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ../img/mobile/buy-now-1.png       1x,
-                ../img/mobile/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <img class="buynow-img" src="" alt="buynow image1" loading="lazy" />
-          </picture>
-          <button class="btn-buynow" type="button">100 g</button>
-        </li>
-      </ul>
-      <p class="form-header">Leave your contacts and we will call you back</p>
+      <form id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
+        <ul class="list buynow-items">
+          <li class="buynow-item">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ../img/desktop/buy-now-1.png       1x,
+                  ../img/desktop/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ../img/tablet/buy-now-1.png       1x,
+                  ../img/tablet/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ../img/mobile/buy-now-1.png       1x,
+                  ../img/mobile/2x/buy-now-1@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src=""
+                alt="buynow image1"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">100g</button>
+          </li>
+        </ul>
+        <div class="buy-info">
+          <ul class="list buy-info">
+            <li>
+              <p class="personal-info">Personal information</p>
+              <input
+                class="modal-input modal-name"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                pattern="[A-Za-z]{2,}"
+              />
+              <input
+                class="modal-input"
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Surname"
+                required
+                pattern="[A-Za-z]{2,}"
+              />
+            </li>
+
+            <li>
+              <p class="personal-info">Email</p>
+              <input
+                class="modal-input"
+                type="email"
+                name="email"
+                id="emaile"
+                placeholder="Enter you email"
+                required
+              />
+            </li>
+
+            <li>
+              <p class="personal-info">Phone number</p>
+              <input
+                class="modal-input modal-phone"
+                type="tel"
+                id="phone"
+                class="phone-input"
+                placeholder="Enter phone number"
+                required
+                pattern="[0-9]{10}"
+              />
+              <input type="hidden" id="country-code" name="country_code" />
+            </li>
+            <li>
+              <p class="personal-info">Card Number</p>
+
+              <input
+                class="modal-input"
+                type="text"
+                id="cardNumber"
+                name="cardNumber"
+                placeholder="Enter card"
+                required
+                pattern="[0-9]{16}"
+              />
+              <svg class="input-card-icon" width="32" height="21">
+                <use href="../img/icons.svg#icon-mastercard"></use>
+              </svg>
+            </li>
+            <li>
+              <p class="personal-info">Comment</p>
+
+              <textarea
+                class="modal-input modal-comment"
+                id="comment"
+                name="comment"
+                placeholder="Enter text"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit" class="btn-buynow btn-buy-submit">
+                Submit
+              </button>
+            </li>
+          </ul>
+        </div>
+      </form>
     </div>
   </div>
 </div>
