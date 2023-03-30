@@ -14,7 +14,7 @@
 @import url('./our-products.css');
 @import url('./top-sellers.css');
 
-/* @import url('./reviews.css'); */
+@import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
 
