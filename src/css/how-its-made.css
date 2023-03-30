@@ -42,8 +42,8 @@
 }
     
 .title-howitsmade>span {
-    color: var(color-orange);
-}
+    color: #fd9222 ;
+
 
 @media screen and (min-width: 1200px) {
     .wrapper-howitsmade {
@@ -153,7 +153,6 @@ iframe {
         display: flex;
         flex-direction: column;
         gap: 18px;
-        list-style: disc;
         color: var(--color-black);
     }
 
