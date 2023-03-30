@@ -26,6 +26,12 @@
 @import url('./buy-now.css');
 
 
+html{
+  scroll-behavior: smooth;
+  }
+
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
