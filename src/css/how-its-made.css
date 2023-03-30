@@ -23,7 +23,6 @@
    
 .title-howitsmade {
     margin-bottom: 32px;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -43,6 +42,7 @@
     
 .title-howitsmade>span {
     color: #fd9222 ;
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -53,14 +53,13 @@
 }
 
 .videoframe {
-max-width: 335px;
-max-height: 500px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-border-radius: 15px;
-margin-bottom: 20px;
-overflow: hidden; 
+    max-width: 335px;
+    max-height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden; 
 }
-
 
 @media screen and (min-width: 768px) {
   
@@ -173,16 +172,16 @@ iframe {
 
     
 .recepie-step::before {
-position: absolute;
-display: block;
-content: "";
-width: 8px;
-height: 8px;
-border-radius: 50%;
-position: absolute;
-left: -16px;
-top: 5px;
-background-color: #4C4C4C;
-border: 1px solid #ECEDED;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
 }
 
