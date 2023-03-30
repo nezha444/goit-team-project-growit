@@ -54,13 +54,17 @@
   letter-spacing: -0.02em;
 }
 
-.review-modal-group {
+.modal-review-input.phone {
+  padding-left: 106px;
+}
+
+.review-input-icon-group {
   position: relative;
 }
 
-.review-flag-icon {
+.review-modal-icon-flag {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 18px;
 }
 
@@ -150,5 +154,13 @@
     width: 117px;
     height: 45px;
     padding: 14px 40px;
+  }
+
+  .review-modal-icon-flag {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
   }
 }
