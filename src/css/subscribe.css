@@ -17,17 +17,17 @@
 
 @media screen and (min-width: 767.98px) {
   .subscribe-section {
-    background-image: url(../img/tablet/subcribe_bg.jpg);
+    background-image: url(../img/tablet/subcribe-bg.jpg);
     padding-top: 72px;
     padding-bottom: 72px;
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .subscribe-section {
-      background-image: url(../img/tablet/2x/subcribe_bg@2x.jpg);
-    }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../img/tablet/2x/subcribe-bg@2x.jpg);
   }
 }
 
@@ -41,7 +41,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(../img/desktop/2x/subcribe_bg@2x.jpg);
+    background-image: url(../img/desktop/2x/subcribe-bg@2x.jpg);
   }
 }
 .headline-subscribe {
