@@ -1,12 +1,10 @@
-.section-top-sellers {
+/* .section-top-sellers {
     margin: auto;
+} */
 
-
-}
-
-.section-top-sellers .container {
+/* .section-top-sellers .container {
     border: 1px solid red;
-}
+} */
 
 .top-sellers-header {
     font-family: 'Montserrat';
@@ -43,6 +41,8 @@
     height: 464px;
     width: 335px;
 }
+
+
 
 .top-sellers-descr {
     margin-top: 20px;
@@ -97,7 +97,7 @@
     }
 
     .top-series-descr-and-button {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         width: 704px;
         display: flex;
         justify-content: space-between;
@@ -148,7 +148,7 @@
         }
 
         .top-series-descr-and-button {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 1136px;
             display: flex;
             justify-content: space-between;

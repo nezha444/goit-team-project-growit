@@ -1,0 +1,229 @@
+.page-heder-container {
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+.header {
+  display: flex;
+  padding: 24px 0 32px;
+}
+.page-heder-container {
+  display: flex;
+}
+.heder-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: none;
+  justify-content: center;
+  gap: 24px;
+}
+.menu-item {
+}
+.menu-link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(#111111);
+}
+.heder-logo {
+  display: flex;
+}
+.burger-menu-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: white;
+}
+.logo-tittle {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.03em;
+  color: var(--color-black);
+}
+.heder-social {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-tittle {
+    margin-right: 4px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.03em;
+    color: var(--color-black);
+  }
+
+  .burger-menu-btn {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    flex-direction: column;
+    border: none;
+    background-color: var(--color-white);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .burger-menu-btn {
+    display: none;
+    width: 32px;
+    height: 32px;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .heder-logo {
+    display: flex;
+  }
+  .logo-tittle {
+    margin-right: 4px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(20 / 18);
+    letter-spacing: -0.03em;
+    width: 185px;
+    color: var(--color-black);
+  }
+  .heder-nav {
+    display: flex;
+    align-items: center;
+  }
+  .heder-social {
+    display: flex;
+    margin-left: 137px;
+    margin-right: 21px;
+  }
+  .social-heder-link {
+    fill: var(--color-black);
+    transition: 250ms var(--cubic);
+}
+  .social-heder-link:hover,
+  .social-heder-link:focus {
+    fill: var(--color-orange);
+}
+  .menu-link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+    transition: 250ms var(--cubic);
+  }
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--color-orange);
+  }
+  .heder-social-svg {
+    margin-left: 20px;
+  }
+  
+}
+
+.mobile-menu {
+  display: flex;
+  background-color: rgba(30, 24, 35, 1);
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  padding: 136px 48px 0 48px;
+  overflow: auto;
+}
+.menu-modal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+.menu-modal:focus {
+  color: var(--color-orange);
+}
+
+.social-list-modal {
+  display: flex;
+}
+.mobile-menu-btn-closed {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: var(--color-white);  
+}
+.mobile-menu-btn-closed:focus {
+    fill: var(--color-orange);
+}
+.social-list-modal {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.social-list-link {
+  margin-right: 20px;
+  fill: var(--color-white);
+}
+.social-list-link:focus {
+    fill: var(--color-orange);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    background-color: rgba(30, 24, 35, 1);
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 156px 83px 0 83px;
+    overflow: auto;
+  }
+  .social-list-modal {
+    display: flex;
+    position: absolute;
+    left: 32px;
+    bottom: 24px;
+  }
+  .mobile-menu-btn-closed {
+    position: absolute;
+    top: 24px;
+    right: 32px;   
+  }
+  .mobile-menu-btn-closed:focus {
+    fill: var(--color-orange);
+}
+
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}

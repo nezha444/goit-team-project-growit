@@ -1,3 +1,106 @@
+.subscribe-section {
+  padding-top: 64px;
+  padding-bottom: 63px;
+  background-image: url(../img/mobile/subcribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../img/mobile/2x/subcribe@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .subscribe-section {
+    background-image: url(../img/tablet/Subcribe_bg.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .subscribe-section {
+      background-image: url(../img/tablet/2x/Subcribe_bg@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .subscribe-section {
+    background-image: url(../img/tablet/subcribe.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(../img/desktop/2x/Subcribe_bg@2x.jpg);
+  }
+}
 .headline-subscribe {
   text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: var(--color-white);
+  text-align: center;
+  width: 291px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 767.98px) {
+  .headline-subscribe {
+    width: 378px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+.subscribe-description {
+  text-align: center;
+  width: 326px;
+
+  margin-bottom: 24px;
+  color: var(--color-white);
+  text-align: center;
+}
+@media screen and (min-width: 767.98px) {
+  .subscribe-description {
+    width: 467px;
+  }
+}
+
+.subscribe-button {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 100px;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  line-height: calc(17 / 14);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--color-light-orange);
+  color: var(--color-black);
+}
+@media screen and (min-width: 767.98px) {
+  .subscribe-button {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
