@@ -64,8 +64,30 @@
 
 .review-modal-icon-flag {
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: 18px;
+}
+
+.review-modal-country-code {
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+}
+
+.review-modal-country-code::after {
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: rgba(64, 64, 64, 0.3);
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
 }
 
 .review-textarea {
@@ -162,5 +184,16 @@
     left: 24px;
     width: 32px;
     height: 32px;
+  }
+
+  .review-modal-country-code {
+    top: 22px;
+    left: 74px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .modal-review-input.phone {
+    padding-left: 177px;
   }
 }

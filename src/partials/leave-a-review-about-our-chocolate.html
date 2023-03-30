@@ -17,9 +17,10 @@
     <form name="leave-a-review" class="review-form" pl>
       <input
         type="text"
+        placeholder="Name"
+        required
         minlength="2"
         maxlength="30"
-        placeholder="Name"
         pattern="[A-Za-z]+"
         class="modal-review-input"
       />
@@ -35,10 +36,11 @@
             class="review-modal-icon-flag"
           ></use>
         </svg>
+        <p class="review-modal-country-code">+380</p>
         <input
           type="tel"
-          minlength="9"
-          maxlength="9"
+          required
+          pattern="[0-9]{9}"
           placeholder="Phone number"
           class="modal-review-input phone"
         />
