@@ -18,12 +18,18 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 
-/* @import url('./buy-now.css');
- @import url('./thank-you.css'); 
- @import url('./leave-a-review-about-our-chocolate.css'); 
- @import url('./thank-you-for-your-feedback.css'); 
- @import url('./explore-our-new-chocolate-first.css');
-@import url('./buy-now.css');  */
+@import url('./buy-now.css');
+/* @import url('./thank-you.css');  */
+/* @import url('./leave-a-review-about-our-chocolate.css');  */
+/* @import url('./thank-you-for-your-feedback.css');  */
+/* @import url('./explore-our-new-chocolate-first.css'); */
+@import url('./buy-now.css');
+
+
+html{
+  scroll-behavior: smooth;
+  }
+
 
 
 body {
@@ -43,25 +49,21 @@ body {
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
+  max-width: 375px;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    padding: 0 20px;
-    max-width: 375px;
-  }
-}
 
 @media screen and (min-width: 767.98px) {
   .container {
     padding: 0 32px;
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1199.98px) {
   .container {
     padding: 0 32px;
-    width: 1200px;
+    max-width: 1200px;
   }
 }

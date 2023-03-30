@@ -1,15 +1,11 @@
-(() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-open]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal]'),
-    };
+  import './js/buynow.js';
+
+  import './js/leave-a-review-about-our-chocolate.js';
+
+  import './js/thank-you-for-your-feedback.js';
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+  import './js/explore-our-new-chocolate-first.js';
   
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-      document.body.classList.toggle('overflow'); //add class and disable scroll in CSS body.overflow
-    }
-  })();
+  import './js/thank-you.js';
+
+  import './js/mobile-menu.js';
