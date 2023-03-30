@@ -1,0 +1,55 @@
+
+.explore.modal {
+    width: 311px;
+    max-width: 100%;
+    height: 350px;
+    max-height: 100%;
+    padding: 32px 24px;
+}
+
+.explore-bg-image {
+    background-image: url(../img/mobile/pop-up-choco-top-bg.jpg);
+    width: 311px;
+    height: 169px;
+    /* position: absolute;
+    top: 0;
+    left: 0; */ 
+}
+
+.explore-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+.explore-accent-text {
+    color: var(--color-orange);
+}
+
+.explore-btn-container {
+    position: relative;
+}
+
+.explore-placeholder {
+    width: 100%;
+    height: 49px;
+    border-radius: 100px;
+    
+}
+
+.explore-btn.btn-buynow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    position: absolute;
+    top: -17px;
+    right: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+    /* min-width: 100%; */
+}
