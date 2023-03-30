@@ -5,7 +5,7 @@
 }
 .header {
   display: flex;
-  padding: 24px 0 32px;
+  padding: 25px 0 19px;
 }
 .page-heder-container {
   display: flex;
@@ -35,18 +35,24 @@
 }
 .heder-logo {
   display: flex;
+  align-items: center;
 }
 .burger-menu-btn {
+  display: flex;
   width: 32px;
   height: 32px;
   border: none;
-  background-color: white;
+  flex-direction: column;
+  border: none;
+  background-color: var(--color-white);
 }
+
 .logo-tittle {
   font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18 / 14);
+  margin-right: 4px;
   letter-spacing: -0.03em;
   color: var(--color-black);
 }
@@ -87,6 +93,10 @@
     width: 32px;
     height: 32px;
   }
+  .header {
+    display: flex;
+    padding: 24px 0 32px;
+  }
   .menu {
     display: flex;
     justify-content: center;
@@ -95,6 +105,7 @@
   }
   .heder-logo {
     display: flex;
+    align-items: center;
   }
   .logo-tittle {
     margin-right: 4px;
@@ -200,7 +211,7 @@
 }
 .social-list-link {
   margin-right: 20px;
-  fill: var(--color-white);
+  fill: var(--color-white);  
 }
 .social-list-link:focus {
   fill: var(--color-orange);
@@ -212,13 +223,14 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    opacity: 1;
+    opacity: 0;
+    visibility: hidden;
     top: 0;
     left: 50%;
     width: 50%;
     height: 100%;
     padding: 156px 83px 0 83px;
-    transition: opacity 205ms var(--cubic) visibility 250ms var(--cubic);
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
     overflow: auto;
   }
   .social-list-modal {
