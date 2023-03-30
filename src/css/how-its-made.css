@@ -1,5 +1,4 @@
 .how-its-made {
-    background-color: #E2E2E2;
     padding-bottom: 72px;
 }
 
@@ -24,14 +23,13 @@
    
 .title-howitsmade {
     margin-bottom: 32px;
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: rgba(17, 17, 17, 1);
+    color: var(--color-black);
 }
 
 @media screen and (min-width: 768px) {
@@ -43,8 +41,9 @@
 }
     
 .title-howitsmade>span {
-    color: rgba(253, 146, 34, 1);
+    color: #fd9222 ;
 }
+
 
 @media screen and (min-width: 1200px) {
     .wrapper-howitsmade {
@@ -56,11 +55,10 @@
 .videoframe {
     max-width: 335px;
     max-height: 500px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pastry-chef-preparing-chocolate-cake.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border-radius: 15px;
-    z-index: 0;
     margin-bottom: 20px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 @media screen and (min-width: 768px) {
@@ -79,11 +77,32 @@
         margin-bottom: 0;
     }
 }
+
+iframe {
+    min-width: 335px;
+    height: 500px;
+    }
+
+@media screen and (min-width: 768px) {
+
+    iframe {
+        min-width: 614px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    iframe {
+        min-width: 600px;
+        height: 400px;
+    }
+}
   
 .recepie-howitsmade {
     max-width: 335px;
     max-height: 456px;
-    background-color: #ffffff;
+    background-color: var(color-white);
     border-radius: 15px;
     padding: 20px 14px;
 }
@@ -129,30 +148,40 @@
     }
 }
     
-    .recepie-list {
-        padding-left: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        list-style: disc;
-        color: #111111;
-    }
+.recepie-list {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: var(--color-black);
+}
 
-    @media screen and (min-width: 1200px) {
-        .recepie-list {
-           gap: 24px;
-    
-        }
+@media screen and (min-width: 1200px) {
+    .recepie-list {
+        gap: 24px;
+
     }
+}
     
-    .recepie-step {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: (calc(18 / 14));
-        letter-spacing: -0.02em;
-     }
+.recepie-step {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
     
-     .recepie-step::marker {
-        color: #4C4C4C;
-        border: 1px solid #ECEDED;
-     }
+.recepie-step::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+}
+
