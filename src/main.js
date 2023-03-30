@@ -9,3 +9,5 @@
   import './js/thank-you.js';
 
   import './js/mobile-menu.js';
+  
+  import './js/our-products-slider.js'
