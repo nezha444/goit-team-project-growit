@@ -12,4 +12,14 @@
       refs.modal.classList.toggle('is-hidden');
       document.body.classList.toggle('overflow'); //add class and disable scroll in CSS body.overflow
     }
+
+    // function centerModal() {
+    //   var modal = document.getElementById("myModal-buynow");
+    //   modal.style.top = (window.innerHeight / 2) - (modal.offsetHeight / 2) + "px";
+    //   modal.style.left = (window.innerWidth / 2) - (modal.offsetWidth / 2) + "px";
+    // }
+    
+    // Вызвать функцию centerModal() при загрузке страницы и при изменении размера окна
+    // window.onload = centerModal;
+    // window.onresize = centerModal;
   })();
