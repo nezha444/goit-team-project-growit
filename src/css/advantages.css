@@ -1,0 +1,109 @@
+
+.advantages-primary {
+    padding-top: 20px;
+    padding-bottom: 36px;
+    color: rgba(255, 255, 255, 0.7);;
+    background-color: var(--color-dark-purple);
+}
+
+.advantages.container {
+    padding-right: 47px;
+}
+
+.advantages-border-svg {
+    width: 62px;
+    height: 62px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.advantages-icon {
+    fill: var(--color-orange);
+}
+
+.advantages-title {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 18px;
+}
+
+.advantages-item:first-child {
+    margin-bottom: 38px;
+}
+
+.advantages-item:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767.98px) {
+
+    .advantages.container {
+        padding-right: 60px;
+    }
+    
+    .advantages-primary {
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
+
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px 60px;
+    }
+
+    .advantages-item {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .advantages-item:first-child {
+        margin-bottom: 0;
+    }
+    
+    .advantages-item:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+
+    .advantages.container {
+        padding: 0 50px;
+    }
+
+    .advantages-primary {
+        padding-bottom: 51px;
+    }
+
+    .advantages-list {
+        flex-wrap: nowrap;
+        gap: 88px;
+    }
+    
+    .advantages-item {
+        flex-basis: calc((100% - 2 * 88px) / 3);
+        max-width: 308px;
+        position: relative;
+    }
+
+    .advantages-item:not(:last-child)::after {
+        display: block;
+        content: "";
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 124px;
+        width: 1px;
+
+        position: absolute;
+        left: 326px;
+        /* top: 20px; */
+        top: 50%;
+        transform: translateY(-50%);
+        /* margin-top: 50px; */
+    }
+}

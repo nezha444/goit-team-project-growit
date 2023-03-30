@@ -39,6 +39,15 @@
   letter-spacing: -0.02em;
 }
 
+.footer-contact-link {
+  transition: color 250ms var(--cubic);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--color-orange);
+}
+
 .icons-list {
   display: flex;
   gap: 14px;
@@ -46,6 +55,12 @@
 
 .footer-icon {
   fill: var(--color-white);
+  transition: fill 250ms var(--cubic);
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  fill: var(--color-orange);
 }
 
 .line {
@@ -61,6 +76,15 @@
   gap: 18px;
   line-height: calc(16 / 14);
   letter-spacing: -0.02em;
+}
+
+.footer-link {
+  transition: color 250ms var(--cubic);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-orange);
 }
 
 @media screen and (min-width: 767.98px) {

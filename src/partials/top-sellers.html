@@ -1,13 +1,37 @@
-<section class="section section-top-sellers">
+<section id="topsellers" class="section section-top-sellers">
   <div class="container">
     <h2 class="top-sellers-header"><span>tOp</span> Sellers</h2>
     <ul class="list top-sellers-items">
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image1"
-        />
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ./img/desktop/top-sellers-1.jpg       1x,
+              ./img/desktop/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ./img/tablet/top-sellers-1.jpg       1x,
+              ./img/tablet/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/mobile/top-sellers-1.jpg       1x,
+              ./img/mobile/2x/top-sellers-1@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image1"
+            loading="lazy"
+          />
+        </picture>
         <p class="top-sellers-descr">
           Crazy enough chocolate originates from a bean just like the coffee
           bean called Cacao. Cacao has been around for thousands of years and
@@ -15,18 +39,66 @@
         </p>
       </li>
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image2"
-        />
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ./img/desktop/top-sellers-2.jpg       1x,
+              ./img/desktop/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ./img/tablet/top-sellers-2.jpg       1x,
+              ./img/tablet/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/mobile/top-sellers-2.jpg       1x,
+              ./img/mobile/2x/top-sellers-2@2x.jpg 2x
+            "
+          />
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image2"
+            loading="lazy"
+          />
+        </picture>
       </li>
       <li class="t-p-item">
-        <img
-          class="top-sellers-img"
-          src="./img/img02.jpg"
-          alt="top-sellers image3"
-        />Last Item
+        <picture>
+          <source
+            media="(min-width: 1199.98px)"
+            srcset="
+              ./img/desktop/top-sellers-3.jpg       1x,
+              ./img/desktop/2x/top-sellers-3@2x.jpg 2x
+            "
+          />
+          <!-- <source
+            media="(min-width: 767.98px)"
+            srcset="
+              ./img/tablet/top-sellers-3.jpg       1x,
+              ./img/tablet/2x/top-sellers-3@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/mobile/top-sellers-3.jpg       1x,
+              ./img/mobile/2x/top-sellers-3@2x.jpg 2x
+            "
+          /> -->
+          <img
+            class="top-sellers-img"
+            src=""
+            alt="top-sellers image3"
+            loading="lazy"
+          />
+        </picture>
       </li>
     </ul>
     <div class="top-series-descr-and-button">
@@ -35,7 +107,9 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="btn-buynow" type="button" data-modal-open>Buy now</button>
+      <button class="btn-buynow" type="button" data-modal-open-buynow>
+        Buy now
+      </button>
     </div>
   </div>
 </section>
