@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-left: 133px
+    margin-left: 133px;
   }
   .heder-logo {
     display: flex;
@@ -115,16 +115,15 @@
   .heder-social {
     display: flex;
     margin-left: 137px;
-    
   }
   .social-heder-link {
     fill: var(--color-black);
     transition: 250ms var(--cubic);
-}
+  }
   .social-heder-link:hover,
   .social-heder-link:focus {
     fill: var(--color-orange);
-}
+  }
   .menu-link {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -143,7 +142,6 @@
   .heder-social-svg {
     margin-left: 20px;
   }
-  
 }
 
 .mobile-menu {
@@ -154,16 +152,16 @@
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(100%);
   top: 0;
   left: 50%;
   width: 50%;
   height: 100%;
   padding: 136px 48px 0 48px;
   overflow: auto;
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  overflow: auto;
 }
 .mobile-menu.is-open {
-  transform: translateX(0);
   visibility: visible;
   opacity: 1;
 }
@@ -189,10 +187,10 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: var(--color-white);  
+  fill: var(--color-white);
 }
 .mobile-menu-btn-closed:focus {
-    fill: var(--color-orange);
+  fill: var(--color-orange);
 }
 .social-list-modal {
   display: flex;
@@ -205,7 +203,7 @@
   fill: var(--color-white);
 }
 .social-list-link:focus {
-    fill: var(--color-orange);
+  fill: var(--color-orange);
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -220,6 +218,7 @@
     width: 50%;
     height: 100%;
     padding: 156px 83px 0 83px;
+    transition: opacity 205ms var(--cubic) visibility 250ms var(--cubic);
     overflow: auto;
   }
   .social-list-modal {
@@ -231,12 +230,11 @@
   .mobile-menu-btn-closed {
     position: absolute;
     top: 24px;
-    right: 32px;   
+    right: 32px;
   }
   .mobile-menu-btn-closed:focus {
     fill: var(--color-orange);
-}
-
+  }
 }
 @media screen and (min-width: 1200px) {
   .mobile-menu {
