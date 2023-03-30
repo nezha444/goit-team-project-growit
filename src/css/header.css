@@ -15,14 +15,14 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-right: 130px;
 }
 .menu {
   display: none;
   justify-content: center;
   gap: 24px;
 }
-.menu-item {
-}
+
 .menu-link {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -64,6 +64,7 @@
     letter-spacing: -0.03em;
     color: var(--color-black);
   }
+  
 
   .burger-menu-btn {
     display: flex;
@@ -102,6 +103,7 @@
   .heder-nav {
     display: flex;
     align-items: center;
+    margin-right: 0;
   }
   .heder-social {
     display: flex;
@@ -143,13 +145,20 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
   top: 0;
   left: 50%;
   width: 50%;
   height: 100%;
   padding: 136px 48px 0 48px;
   overflow: auto;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
 }
 .menu-modal {
   display: flex;
