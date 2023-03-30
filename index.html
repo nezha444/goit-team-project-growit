@@ -24,7 +24,7 @@
 
     
     <script type="module" crossorigin src="/goit-team-project-growit/assets/index-01417487.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-2e337a64.css">
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-b558d5fe.css">
   </head>
   <body>
     <header class="header">
@@ -517,19 +517,40 @@
   </div>
 </section>
 
-      <section class:section>
+      <section class="section review">
   <div class="container">
     <h2 class="reviews-title">
       <span class="review-title-decor">chocolate</span> is loved
     </h2>
     <ul class="review-list">
       <li class="review-card">
-        <img
-          class="review-card-image"
-          src="../img/desktop/chocolate-is-loved-1.png"
-          width="80"
-          alt="Victoria Dobrzhanska"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/desktop.chocolate-is-loved-1.png       1x,
+              ./img/desktop/2x/chocolate-is-loved-1@2x.png 2x
+            "
+            media="(min-width:
+          1200px)"
+          />
+          <source
+            srcset="/goit-team-project-growit/assets/chocolate-is-loved-1-dc31ae42.png 1x, /goit-team-project-growit/assets/chocolate-is-loved-1@2x-e8a7b0de.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/goit-team-project-growit/assets/chocolate-is-loved-1-e8aeb334.png 1x, /goit-team-project-growit/assets/chocolate-is-loved-1@2x-6f9ccfc7.png 2x"
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="review-card-image"
+            src="/goit-team-project-growit/assets/chocolate-is-loved-1-dc31ae42.png"
+            alt="Victoria Dobrzhanska"
+            width="80"
+            height="80"
+          />
+        </picture>
+
         <h3 class="review-card-title">Victoria Dobrzhanska</h3>
         <p class="review-card-text">
           I love this chocolate bar. Perfect combination of light crispy wafer,
@@ -537,12 +558,35 @@
         </p>
       </li>
       <li class="review-card">
-        <img
-          class="review-card-image"
-          src="../img/desktop/chocolate-is-loved-2.png"
-          width="80"
-          alt="Nazar Babenko"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/desktop.chocolate-is-loved-2.png       1x,
+              ./img/desktop/2x/chocolate-is-loved-2@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/goit-team-project-growit/assets/chocolate-is-loved-2-f0132f4b.png 1x, /goit-team-project-growit/assets/chocolate-is-loved-2@2x-6af02897.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/chocolate-is-loved-2.png       1x,
+              ./img/mobile/2x/chocolate-is-loved-2@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="review-card-image"
+            src="/goit-team-project-growit/assets/chocolate-is-loved-2-f0132f4b.png"
+            alt="Nazar Babenko"
+            width="80"
+            height="80"
+          />
+        </picture>
+
         <h3 class="review-card-title">Nazar Babenko</h3>
         <p class="review-card-text">
           This chocolate confection is a delight! A delight! The wafer is light
@@ -550,12 +594,32 @@
         </p>
       </li>
       <li class="review-card">
-        <img
-          class="review-card-image"
-          src="../img/desktop/2x/chocolate-is-loved-3@2x.png"
-          width="80"
-          alt="Olena Kampusch"
-        />
+        <picture>
+          <source
+            srcset="/goit-team-project-growit/assets/chocolate-is-loved-3-7a30c2db.png 1x, /goit-team-project-growit/assets/chocolate-is-loved-3@2x-c572370d.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/goit-team-project-growit/assets/chocolate-is-loved-3-7a30c2db.png 1x, /goit-team-project-growit/assets/chocolate-is-loved-3@2x-c572370d.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/chocolate-is-loved-3.png       1x,
+              ./img/mobile/2x/chocolate-is-loved-3@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="review-card-image"
+            src="/goit-team-project-growit/assets/chocolate-is-loved-3-7a30c2db.png"
+            alt="Olena Kampusch"
+            width="80"
+            height="80"
+          />
+        </picture>
+
         <h3 class="review-card-title">Olena Kampusch</h3>
         <p class="review-card-text">
           Chocolate is a family favourite treat. Love the delicious smooth
@@ -803,50 +867,6 @@
   </div>
 </div>
 
-    <!-- <div class="backdrop is-hidden animation-backdrop" data-modal-buynow>
-  <div class="modal">
-    <div id="myModal-buynow" class="modal">
-      <button class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-      <h1 class="visually-hidden"></h1>
-      <h2 class="header-buynow"><span>BUY</span> NOW</h2>
-      <ul class="list buynow-items">
-        <li class="buynow-item">
-          <picture>
-            <source
-              media="(min-width: 1199.98px)"
-              srcset="
-                ../img/desktop/buy-now-1.png       1x,
-                ../img/desktop/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <source
-              media="(min-width: 767.98px)"
-              srcset="
-                ../img/tablet/buy-now-1.png       1x,
-                ../img/tablet/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ../img/mobile/buy-now-1.png       1x,
-                ../img/mobile/2x/buy-now-1@2x.png 2x
-              "
-            />
-            <img class="buynow-img" src="" alt="buynow image1" loading="lazy" />
-          </picture>
-          <button class="btn-buynow" type="button">100 g</button>
-        </li>
-      </ul>
-      <p class="form-header">Leave your contacts and we will call you back</p>
-    </div>
-  </div>
-</div>
- -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
