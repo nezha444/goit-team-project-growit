@@ -42,11 +42,15 @@
 }
 
 @media screen and (min-width: 767.98px) {
+
+    .advantages.container {
+        padding-right: 60px;
+    }
     
     .advantages-primary {
-            padding-top: 50px;
-            padding-bottom: 85px;
-        }
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
 
     .advantages-list {
         display: flex;
@@ -68,6 +72,14 @@
 }
 
 @media screen and (min-width: 1199.98px) {
+
+    .advantages.container {
+        padding: 0 50px;
+    }
+
+    .advantages-primary {
+        padding-bottom: 51px;
+    }
 
     .advantages-list {
         flex-wrap: nowrap;
