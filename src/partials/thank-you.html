@@ -1,15 +1,47 @@
 <div class="backdrop is-hidden animation-backdrop" data-modal-thank-you>
-  <div class="modal">
-    <div id="myModal-thank-you" class="modal">
+  <div class="modal modal-thank-you">
+    <div id="myModal-thank-you" class="position">
       <button class="modal-close-btn" data-modal-close-thank-you>
         <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
+          <use href="./img/icons.svg#icon-close-btn"></use>
         </svg>
       </button>
       <h1 class="visually-hidden"></h1>
-      <h2 class=""><span>TEXT</span> thank-you</h2>
+      <div class="to-try">
+        <h2 class="thank-you">thank you <br />for your feedback!</h2>
+        <p class="happy">We are so happy to hear <br />from you!</p>
+      </div>
+      <picture class="choco-bar-position">
+        <source
+          srcset="
+            ./img/desktop/pop-up-choco.png       1x,
+            ./img/desktop/2x/pop-up-choco@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
 
-      <p>thank-you</p>
+        <source
+          srcset="
+            ./img/tablet/pop-up-choco.png       1x,
+            ./img/tablet/2x/pop-up-choco@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/mobile/pop-up-choco.png       1x,
+            ./img/mobile/2x/pop-up-choco@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="choco-bar"
+          src="./img/mobile/pop-up-choco.png"
+          alt="dark-chocolate-bar"
+          loading="lazy"
+          width="296"
+        />
+      </picture>
     </div>
   </div>
 </div>

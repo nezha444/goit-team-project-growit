@@ -4,6 +4,8 @@
     padding-bottom: 36px;
     color: rgba(255, 255, 255, 0.7);;
     background-color: var(--color-dark-purple);
+
+    line-height: 1.22;
 }
 
 .advantages.container {
@@ -95,7 +97,7 @@
     .advantages-item:not(:last-child)::after {
         display: block;
         content: "";
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         height: 124px;
         width: 1px;
 
