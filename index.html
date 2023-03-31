@@ -23,8 +23,8 @@
     />
 
     
-    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-1e8773d9.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-953e14c5.css">
+    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-266a036d.js"></script>
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-22414927.css">
   </head>
   <body>
     <header class="header">
@@ -793,7 +793,7 @@
           />
           <img
             class="top-sellers-img"
-            src=""
+            src="/goit-team-project-growit/assets/top-sellers-1-d39e88b9.jpg"
             alt="top-sellers image1"
             loading="lazy"
           />
@@ -820,7 +820,7 @@
           />
           <img
             class="top-sellers-img"
-            src=""
+            src="/goit-team-project-growit/assets/top-sellers-2-f7670d55.jpg"
             alt="top-sellers image2"
             loading="lazy"
           />
@@ -1110,60 +1110,99 @@
             <picture>
               <source
                 media="(min-width: 1199.98px)"
-                srcset="
-                  ../img/desktop/buy-now-1.png       1x,
-                  ../img/desktop/2x/buy-now-1@2x.png 2x
-                "
+                srcset="/goit-team-project-growit/assets/buy-now-1-d7f124c4.png 1x, /goit-team-project-growit/assets/buy-now-1@2x-dd138cd8.png 2x"
               />
               <source
                 media="(min-width: 767.98px)"
-                srcset="
-                  ../img/tablet/buy-now-1.png       1x,
-                  ../img/tablet/2x/buy-now-1@2x.png 2x
-                "
+                srcset="/goit-team-project-growit/assets/buy-now-1-d7f124c4.png 1x, /goit-team-project-growit/assets/buy-now-1@2x-dd138cd8.png 2x"
               />
               <source
                 media="(max-width: 767px)"
-                srcset="
-                  ../img/mobile/buy-now-1.png       1x,
-                  ../img/mobile/2x/buy-now-1@2x.png 2x
-                "
+                srcset="/goit-team-project-growit/assets/buy-now-1-7b01cfb3.png 1x, /goit-team-project-growit/assets/buy-now-1@2x-7e6afc59.png 2x"
               />
               <img
                 class="buynow-img"
-                src=""
+                src="/goit-team-project-growit/assets/buy-now-1-7b01cfb3.png"
                 alt="buynow image1"
                 loading="lazy"
               />
             </picture>
-            <button class="btn-buynow btn-selected" type="button">100g</button>
+            <button class="btn-buynow btn-selected" type="button">100 g</button>
+          </li>
+          <li class="buynow-item">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="/goit-team-project-growit/assets/buy-now-2-3f893608.png 1x, /goit-team-project-growit/assets/buy-now-2@2x-a81bbf58.png 2x"
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="/goit-team-project-growit/assets/buy-now-2-3f893608.png 1x, /goit-team-project-growit/assets/buy-now-2@2x-a81bbf58.png 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/goit-team-project-growit/assets/buy-now-2-388f90d1.png 1x, /goit-team-project-growit/assets/buy-now-2@2x-090420b5.png 2x"
+              />
+              <img
+                class="buynow-img"
+                src="/goit-team-project-growit/assets/buy-now-2-388f90d1.png"
+                alt="buynow image2"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">200 g</button>
+          </li>
+          <li class="buynow-item">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="/goit-team-project-growit/assets/buy-now-3-fde690fa.png 1x, /goit-team-project-growit/assets/buy-now-3@2x-3762b782.png 2x"
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="/goit-team-project-growit/assets/buy-now-3-fde690fa.png 1x, /goit-team-project-growit/assets/buy-now-3@2x-3762b782.png 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/goit-team-project-growit/assets/buy-now-3-4b1bb850.png 1x, /goit-team-project-growit/assets/buy-now-3@2x-6872cec5.png 2x"
+              />
+              <img
+                class="buynow-img"
+                src="/goit-team-project-growit/assets/buy-now-3-4b1bb850.png"
+                alt="buynow image3"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">300 g</button>
           </li>
         </ul>
-        <div class="buy-info">
+        <div class="buy-info-temp">
           <ul class="list buy-info">
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Personal information</p>
-              <input
-                class="modal-input modal-name"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-                pattern="[A-Za-z]{2,}"
-              />
-              <input
-                class="modal-input"
-                type="text"
-                name="surname"
-                id="surname"
-                placeholder="Surname"
-                required
-                pattern="[A-Za-z]{2,}"
-              />
+              <div class="fio">
+                <input
+                  class="modal-input modal-name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                  pattern="[A-Za-z]{2,}"
+                />
+                <input
+                  class="modal-input modal-surname"
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Surname"
+                  required
+                  pattern="[A-Za-z]{2,}"
+                />
+              </div>
             </li>
 
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Email</p>
               <input
                 class="modal-input"
@@ -1172,39 +1211,49 @@
                 id="emaile"
                 placeholder="Enter you email"
                 required
+                pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
               />
             </li>
 
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Phone number</p>
-              <input
-                class="modal-input modal-phone"
-                type="tel"
-                id="phone"
-                class="phone-input"
-                placeholder="Enter phone number"
-                required
-                pattern="[0-9]{10}"
-              />
-              <input type="hidden" id="country-code" name="country_code" />
+              <div class="phone-container">
+                <svg width="24" height="24" class="review-modal-icon-flag">
+                  <use
+                    href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-ua"
+                    class="modal-icon-flag"
+                  ></use>
+                </svg>
+                <p class="phone-prefix">+380</p>
+                <div class="vr-line"></div>
+                <input
+                  type="tel"
+                  required
+                  pattern="[0-9]{7}"
+                  placeholder="Phone number"
+                  class="modal-input modal-phone"
+                />
+              </div>
             </li>
-            <li>
-              <p class="personal-info">Card Number</p>
 
-              <input
-                class="modal-input"
-                type="text"
-                id="cardNumber"
-                name="cardNumber"
-                placeholder="Enter card"
-                required
-                pattern="[0-9]{16}"
-              />
-              <svg class="input-card-icon" width="32" height="21">
-                <use href="../img/icons.svg#icon-mastercard"></use>
-              </svg>
+            <li class="buy-info-item">
+              <p class="personal-info">Card number</p>
+              <div class="card-input">
+                <input
+                  class="modal-input"
+                  type="text"
+                  id="cardNumber"
+                  name="cardNumber"
+                  placeholder="Enter card"
+                  required
+                  pattern="[0-9]{16}"
+                />
+                <svg class="input-card-icon" width="32" height="21">
+                  <use href="../img/icons.svg#icon-mastercard"></use>
+                </svg>
+              </div>
             </li>
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Comment</p>
 
               <textarea
@@ -1214,7 +1263,7 @@
                 placeholder="Enter text"
               ></textarea>
             </li>
-            <li>
+            <li class="buy-info-item">
               <button type="submit" class="btn-buynow btn-buy-submit">
                 Submit
               </button>
