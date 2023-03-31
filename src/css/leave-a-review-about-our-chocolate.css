@@ -1,0 +1,220 @@
+.review-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 311px;
+  height: 471px;
+  border-radius: 15px;
+  background: var(--color-white);
+  padding: 32px 24px;
+}
+
+.close-btn-review {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border: transparent;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.review-close-btn-icon {
+  transition: fill 250ms var(--cubic);
+}
+
+.close-btn-review:hover .review-close-btn-icon,
+.close-btn-review:focus .review-close-btn-icon {
+  fill: var(--color-orange);
+}
+
+.modal-review-title {
+  max-width: 255px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.modal-review-accent {
+  color: var(--color-orange);
+}
+
+.modal-review-input {
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 100%;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  outline: transparent;
+  transition: border-color 250ms var(--cubic);
+}
+
+.modal-review-input::placeholder,
+.review-textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+}
+
+.modal-review-input:hover,
+.modal-review-input:focus,
+.review-textarea:hover,
+.review-textarea:focus {
+  border-color: var(--color-orange);
+}
+
+.modal-review-input.phone {
+  padding-left: 106px;
+}
+
+.review-input-icon-group {
+  position: relative;
+}
+
+.review-modal-icon-flag {
+  position: absolute;
+  top: 11px;
+  left: 18px;
+}
+
+.review-modal-country-code {
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+}
+
+.review-vr-line {
+  border-left: 2px solid rgba(64, 64, 64, 0.3);
+  height: 24px;
+  position: absolute;
+  left: 104px;
+  top: 10px;
+}
+
+.review-textarea {
+  resize: none;
+  width: 100%;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  outline: transparent;
+  transition: border-color 250ms var(--cubic);
+}
+
+.btn-submit-review {
+  background-color: var(--color-orange);
+  color: #fafafa;
+  padding: 12px 28px;
+  width: 93px;
+  height: 41px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  border: none;
+  border-radius: 100px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.btn-submit-review:hover,
+.btn-submit-review:focus {
+  background-color: var(--color-light-orange);
+  color: var(--color-orange);
+}
+
+@media screen and (min-width: 767.98px) {
+  .review-modal {
+    width: 517px;
+    height: 631px;
+    padding: 40px;
+  }
+
+  .close-btn-review {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-review-title {
+    max-width: 298px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  .review-title-br {
+    display: none;
+  }
+
+  .modal-review-input {
+    height: 66px;
+    margin-bottom: 19px;
+    padding: 22px 24px;
+    border-radius: 13px;
+  }
+
+  .modal-review-input::placeholder,
+  .review-textarea::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .review-textarea {
+    height: 137px;
+    padding: 22px 24px;
+    border-radius: 13px;
+    margin-bottom: 18px;
+  }
+
+  .review-close-btn-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-submit-review {
+    width: 117px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+
+  .review-modal-icon-flag {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .review-modal-country-code {
+    top: 22px;
+    left: 74px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .modal-review-input.phone {
+    padding-left: 177px;
+  }
+
+  .review-vr-line {
+    height: 32px;
+    top: 16px;
+    left: 149px;
+  }
+}
