@@ -1,8 +1,6 @@
   import './js/buynow.js';
 
   import './js/leave-a-review-about-our-chocolate.js';
-
-  import './js/thank-you-for-your-feedback.js';
   
   import './js/explore-our-new-chocolate-first.js';
   
@@ -11,3 +9,5 @@
   import './js/mobile-menu.js';
   
   import './js/our-products-slider.js'
+
+  import './js/thank-you-for-your-feedback.js';
