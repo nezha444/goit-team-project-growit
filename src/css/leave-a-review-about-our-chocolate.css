@@ -103,7 +103,7 @@
 
 .btn-submit-review {
   background-color: var(--color-orange);
-  color: var(--color-white);
+  color: #fafafa;
   padding: 12px 28px;
   width: 93px;
   height: 41px;
