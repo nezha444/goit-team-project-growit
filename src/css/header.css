@@ -6,6 +6,9 @@
 .header {
   display: flex;
   padding: 25px 0 19px;
+  position: sticky;
+  z-index: 2;
+
 }
 .page-heder-container {
   display: flex;
@@ -61,6 +64,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    padding: 24px 0 32px;
+    position: sticky;
+    z-index: 2;
+  }
   .logo-tittle {
     margin-right: 4px;
     font-style: italic;
@@ -88,6 +97,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .page-heder-container {
+    display: flex;
+  
+}
   .burger-menu-btn {
     display: none;
     width: 32px;
@@ -96,6 +109,8 @@
   .header {
     display: flex;
     padding: 24px 0 32px;
+    position: sticky;
+    z-index: 2;
   }
   .menu {
     display: flex;
