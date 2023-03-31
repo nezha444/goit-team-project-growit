@@ -24,7 +24,7 @@
 
     
     <script type="module" crossorigin src="/goit-team-project-growit/assets/index-2f2ce8de.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-73e36efa.css">
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-e8d64870.css">
   </head>
   <body>
     <header class="header">
@@ -821,7 +821,13 @@
       <input type="radio" name="radio-selector" value="3" />
       <input type="radio" name="radio-selector" value="4" />
     </form>
-    <button type="submit" class="review-selector-button">Leave a review</button>
+    <button
+      type="submit"
+      class="review-selector-button"
+      data-modal-open-leave-a-review
+    >
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -932,13 +938,13 @@
         <a href="#howitsmade" class="footer-link">How it’s made?</a>
       </li>
       <li>
-        <a href="#" class="footer-link">Our products</a>
+        <a href="#ourproducts" class="footer-link">Our products</a>
       </li>
       <li>
-        <a href="#" class="footer-link">Top sellers</a>
+        <a href="#topsellers" class="footer-link">Top sellers</a>
       </li>
       <li>
-        <a href="#" class="footer-link">Chocolate is loved</a>
+        <a href="#review" class="footer-link">Chocolate is loved</a>
       </li>
     </ul>
   </div>
@@ -1096,18 +1102,62 @@
 </div>
 
     <div class="backdrop is-hidden animation-backdrop" data-modal-leave-a-review>
-  <div class="modal">
-    <div id="myModal-leave-a-review" class="modal">
-      <button class="modal-close-btn" data-modal-close-leave-a-review>
-        <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
+  <div class="review-modal">
+    <button
+      type="button"
+      class="close-btn-review"
+      data-modal-close-leave-a-review
+    >
+      <svg width="14" height="14" class="review-close-btn-icon">
+        <use href="../img/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal-review-title">
+      Leave a review <br class="review-title-br" />
+      about
+      <span class="modal-review-accent">our chocolate</span>
+    </h2>
+    <form name="leave-a-review" class="review-form" pl>
+      <input
+        type="text"
+        placeholder="Name"
+        required
+        pattern="[A-Za-z]{2,30}"
+        class="modal-review-input"
+      />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        required
+        pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
+        class="modal-review-input"
+      />
+      <div class="review-input-icon-group">
+        <svg width="24" height="24" class="review-modal-icon-flag">
+          <use
+            href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-ua"
+            class="review-modal-icon-flag"
+          ></use>
         </svg>
-      </button>
-      <h1 class="visually-hidden"></h1>
-      <h2 class=""><span>TEXT</span> leave-a-review</h2>
-
-      <p>Leave review</p>
-    </div>
+        <p class="review-modal-country-code">+380</p>
+        <div class="review-vr-line"></div>
+        <input
+          type="tel"
+          required
+          pattern="[0-9]{9}"
+          placeholder="Phone number"
+          class="modal-review-input phone"
+        />
+      </div>
+      <textarea
+        name="comment"
+        cols="30"
+        rows="10"
+        placeholder="Enter text"
+        class="review-textarea"
+      ></textarea>
+    </form>
+    <button type="submit" class="btn-submit-review">Send</button>
   </div>
 </div>
 
