@@ -55,7 +55,7 @@
     width: 120px; */
 
     padding: 12px 28px;
-    /* display: flex; */
+    display: flex;
     border: none;
 
     border-radius: 100px;
@@ -78,6 +78,12 @@
     width: 306px;
     letter-spacing: -0.02em;
     color: var(--color-black);
+}
+
+@media screen and (max-width: 767.98px) {
+    .btn-buynow {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 767.98px) {
