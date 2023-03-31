@@ -51,11 +51,11 @@
 
 .btn-buynow {
     margin: 0 auto;
-    height: 41px;
-    width: 120px;
+    /* height: 41px;
+    width: 120px; */
 
     padding: 12px 28px;
-    display: flex;
+    /* display: flex; */
     border: none;
 
     border-radius: 100px;
@@ -119,8 +119,8 @@
 
     .btn-buynow {
         margin: 0;
-        height: 50px;
-        width: 162px;
+        /* height: 50px;
+        width: 162px; */
         font-weight: 600;
         font-size: 18px;
         line-height: calc(22 / 18);
@@ -176,8 +176,8 @@
 
     .btn-buynow {
         margin: 0;
-        height: 50px;
-        width: 162px;
+        /* height: 50px;
+        width: 162px; */
         font-weight: 600;
         font-size: 18px;
         line-height: calc(22 / 18);

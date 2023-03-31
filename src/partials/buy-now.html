@@ -40,7 +40,7 @@
                 loading="lazy"
               />
             </picture>
-            <button class="btn-buynow btn-selected" type="button">100g</button>
+            <button class="btn-buynow btn-selected" type="button">100 g</button>
           </li>
         </ul>
         <div class="buy-info">
@@ -81,19 +81,26 @@
 
             <li>
               <p class="personal-info">Phone number</p>
-              <input
-                class="modal-input modal-phone"
-                type="tel"
-                id="phone"
-                class="phone-input"
-                placeholder="Enter phone number"
-                required
-                pattern="[0-9]{10}"
-              />
-              <input type="hidden" id="country-code" name="country_code" />
+              <div class="phone-container">
+                <div class="phone-left">
+                  <svg class="phone-flag-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-ua"></use>
+                  </svg>
+                  <p class="phone-prefix">+380</p>
+                </div>
+                <input
+                  class="modal-input modal-phone"
+                  type="tel"
+                  id="phone"
+                  placeholder="Phone number"
+                  required
+                  pattern="[0-9]{7}"
+                />
+              </div>
             </li>
+
             <li>
-              <p class="personal-info">Card Number</p>
+              <p class="personal-info">Card number</p>
 
               <input
                 class="modal-input"

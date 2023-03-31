@@ -127,30 +127,33 @@ body.overflow {
 }
 
 .btn-selected {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 96px;
-    height: 33px;
+    height: 33px; */
+    padding: 8px 27px;
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17/14);
-
-    background: var(--color-light-orange);
-    color: var(--color-orange);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: var(--color-white);
+    color: var(--color-black);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0ms, color 0ms;
 
 }
 
 .btn-selected:hover,
 .btn-selected:focus,
 .btn-selected:active {
-    color: var(--color-white);
-    background: var(--color-orange);
-
+    border: 1px solid var(--color-black);
+    background: var(--color-white);
+    color: var(--color-black);
 }
 
-.buy-now-form input {
+/* .buy-now-form input { */
+.modal-input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -163,6 +166,52 @@ body.overflow {
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     padding: 18px 14px 18px 14px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+    width: 263px;
+    height: 45px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(17, 17, 17, 0.05);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+}
+
+.phone-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 0px 20px 0px 0px; */
+    gap: 8px;
+    /* width: 74px;
+    height: 25px; */
+}
+
+.phone-flag-icon {
+    display: block;
+    /* position: absolute; */
+    /* margin-left: 18px;
+    margin-right: 8px; */
+}
+
+.phone-prefix {
+    /* position: absolute; */
+    /* padding-left: 50px;
+    margin-right: 2px; */
+    /* display: inline-block; */
+}
+
+.modal-phone {
+    padding-left: 18px;
+    /* display: inline-block; */
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .personal-info {
@@ -223,14 +272,6 @@ body.overflow {
     color: rgba(117, 117, 117, 0.5);
 }
 
-/* .modal-form-group:not(:last-child) {
-    margin-bottom: 30px;
-  } */
-/* 
-.modal-input:focus+.input-icon {
-    fill: #1f0cf6;
-} */
-
 .modal-input:focus {
     border-color: var(--color-black);
     outline: transparent;
@@ -251,8 +292,5 @@ body.overflow {
     /* font-weight: 600;
     font-size: 18px;
     line-height: calc(22 / 18); */
-    /* padding: 12px 28px; */
-
-
-
+    padding: 12px 28px;
 }
