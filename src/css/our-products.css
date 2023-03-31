@@ -71,7 +71,7 @@
     align-items: center;
     gap: 13px;
 }
-.our-products-card-slider .swiper-pagination-bullet {
+/* .our-products-card-slider .swiper-pagination-bullet {
     background: rgba(17, 17, 17, 0.1);
     width: 13px;
     height: 13px;
@@ -83,7 +83,7 @@
     width: 28px;
     height: 13px;
     border-radius: 7px;
-}
+} */
 
 @media screen and (min-width: 767.98px) {
     .our-products-wrapper {
