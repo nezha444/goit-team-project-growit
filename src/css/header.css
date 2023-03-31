@@ -165,7 +165,7 @@
   visibility: hidden;
   top: 0;
   left: 50%;
-  width: 50%;
+  width: 220px;
   height: 100%;
   padding: 136px 48px 0 48px;
   overflow: auto;
@@ -226,8 +226,8 @@
     opacity: 0;
     visibility: hidden;
     top: 0;
-    left: 50%;
-    width: 50%;
+    left: 58%;
+    width: 290px;
     height: 100%;
     padding: 156px 83px 0 83px;
     transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
