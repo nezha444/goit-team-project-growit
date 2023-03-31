@@ -19,14 +19,14 @@
         type="text"
         placeholder="Name"
         required
-        minlength="2"
-        maxlength="30"
-        pattern="[A-Za-z]+"
+        pattern="[A-Za-z]{2,30}"
         class="modal-review-input"
       />
       <input
         type="email"
         placeholder="Enter your email"
+        required
+        pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
         class="modal-review-input"
       />
       <div class="review-input-icon-group">
@@ -37,6 +37,7 @@
           ></use>
         </svg>
         <p class="review-modal-country-code">+380</p>
+        <div class="review-vr-line"></div>
         <input
           type="tel"
           required

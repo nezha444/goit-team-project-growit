@@ -21,6 +21,15 @@
   padding: 5px;
 }
 
+.review-close-btn-icon {
+  transition: fill 250ms var(--cubic);
+}
+
+.close-btn-review:hover .review-close-btn-icon,
+.close-btn-review:focus .review-close-btn-icon {
+  fill: var(--color-orange);
+}
+
 .modal-review-title {
   max-width: 255px;
   margin-bottom: 32px;
@@ -44,6 +53,7 @@
   margin-bottom: 14px;
   padding: 14px 18px;
   outline: transparent;
+  transition: border-color 250ms var(--cubic);
 }
 
 .modal-review-input::placeholder,
@@ -52,6 +62,13 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: -0.02em;
+}
+
+.modal-review-input:hover,
+.modal-review-input:focus,
+.review-textarea:hover,
+.review-textarea:focus {
+  border-color: var(--color-orange);
 }
 
 .modal-review-input.phone {
@@ -79,15 +96,12 @@
   letter-spacing: -0.02em;
 }
 
-.review-modal-country-code::after {
-  content: '';
-  width: 1px;
+.review-vr-line {
+  border-left: 2px solid rgba(64, 64, 64, 0.3);
   height: 24px;
-  background-color: rgba(64, 64, 64, 0.3);
-  display: block;
   position: absolute;
-  z-index: 1;
-  bottom: 50%;
+  left: 104px;
+  top: 10px;
 }
 
 .review-textarea {
@@ -99,6 +113,7 @@
   margin-bottom: 18px;
   padding: 14px 18px;
   outline: transparent;
+  transition: border-color 250ms var(--cubic);
 }
 
 .btn-submit-review {
@@ -180,7 +195,7 @@
 
   .review-modal-icon-flag {
     position: absolute;
-    top: 18px;
+    top: 16px;
     left: 24px;
     width: 32px;
     height: 32px;
@@ -195,5 +210,11 @@
 
   .modal-review-input.phone {
     padding-left: 177px;
+  }
+
+  .review-vr-line {
+    height: 32px;
+    top: 16px;
+    left: 149px;
   }
 }
