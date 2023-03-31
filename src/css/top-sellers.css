@@ -1,6 +1,6 @@
-/* .section-top-sellers {
-    margin: auto;
-} */
+.section-top-sellers {
+    padding-bottom: 72px;
+}
 
 /* .section-top-sellers .container {
     border: 1px solid red;
@@ -81,6 +81,10 @@
 }
 
 @media screen and (min-width: 767.98px) {
+    .section-top-sellers {
+        padding-bottom: 100px;
+    }
+
     .top-sellers-img {
         width: 344px;
     }
@@ -127,55 +131,61 @@
 }
 
 @media screen and (min-width: 1199.98px) {
-    @media screen and (min-width: 767.98px) {
-        .top-sellers-img {
-            width: 368px;
-        }
 
-        .top-sellers-items {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-
-        .top-sellers-items li:last-child {
-            display: block;
-        }
-
-        .top-series-descr-and-button {
-            /* border: 1px solid green; */
-            width: 1136px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-
-        }
-
-        .top-sellers-descr-tabl-desktop {
-            display: block;
-            width: 407px;
-
-            /* height: 90px; */
-        }
-
-        .top-sellers-descr {
-            display: none;
-        }
-
-        .btn-buynow {
-            margin: 0;
-            height: 50px;
-            width: 162px;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: calc(22 / 18);
-            padding: 14px 40px;
-
-        }
+    /* @media screen and (min-width: 767.98px) { */
+    .section-top-sellers {
+        padding-bottom: 128px;
     }
+
+    .top-sellers-img {
+        width: 368px;
+    }
+
+    .top-sellers-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .top-sellers-items li:last-child {
+        display: block;
+    }
+
+    .top-series-descr-and-button {
+        /* border: 1px solid green; */
+        width: 1136px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    .top-sellers-descr-tabl-desktop {
+        display: block;
+        width: 407px;
+
+        /* height: 90px; */
+    }
+
+    .top-sellers-descr {
+        display: none;
+    }
+
+    .btn-buynow {
+        margin: 0;
+        height: 50px;
+        width: 162px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        padding: 14px 40px;
+
+    }
+
+    /* } */
 
     .btn-buynow:hover,
     .btn-buynow:focus {
