@@ -1327,18 +1327,44 @@
   </div>
 </div>
 
-    <div class="backdrop is-hidden animation-backdrop" data-modal-feedback>
-  <div class="modal">
-    <div id="myModal-feedback" class="modal">
-      <button class="modal-close-btn" data-modal-close-feedback>
+    <div class="backdrop is-hidden animation-backdrop" data-modal-thank-you>
+  <div class="modal modal-thank-you">
+    <div id="myModal-feedback" class="position">
+      <button class="modal-close-btn" data-modal-close-thank-you>
         <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
+          <use href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-close-btn"></use>
         </svg>
       </button>
       <h1 class="visually-hidden"></h1>
-      <h2 class=""><span>TEXT</span> feedback</h2>
+      <div class="to-try">
+        <h2 class="thank-you">thank you!</h2>
+        <p class="happy">
+          We are glad that you ordered our chocolate and we are giving you a 20%
+          discount on all our products.
+        </p>
+      </div>
+      <picture class="choco-bar-position">
+        <source
+          srcset="/goit-team-project-growit/assets/pop-up-choco-d12c8d88.png 1x, /goit-team-project-growit/assets/pop-up-choco@2x-60139c7c.png 2x"
+          media="(min-width: 1200px)"
+        />
 
-      <p>Leave your contacts and we will call you back</p>
+        <source
+          srcset="/goit-team-project-growit/assets/pop-up-choco-d12c8d88.png 1x, /goit-team-project-growit/assets/pop-up-choco@2x-60139c7c.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/goit-team-project-growit/assets/pop-up-choco-08cde8e9.png 1x, /goit-team-project-growit/assets/pop-up-choco@2x-785ef821.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="choco-bar"
+          src="/goit-team-project-growit/assets/pop-up-choco-08cde8e9.png"
+          alt="dark-chocolate-bar"
+          loading="lazy"
+          width="296"
+        />
+      </picture>
     </div>
   </div>
 </div>
