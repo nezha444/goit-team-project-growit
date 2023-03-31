@@ -19,18 +19,15 @@
 @import url('./footer.css');
 
 @import url('./buy-now.css');
-/* @import url('./thank-you.css');  */
-/* @import url('./leave-a-review-about-our-chocolate.css');  */
-/* @import url('./thank-you-for-your-feedback.css');  */
+@import url('./thank-you.css');
+@import url('./leave-a-review-about-our-chocolate.css');
+/* @import url('./thank-you-for-your-feedback.css'); */
 /* @import url('./explore-our-new-chocolate-first.css'); */
 @import url('./buy-now.css');
 
-
-html{
+html {
   scroll-behavior: smooth;
-  }
-
-
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -52,7 +49,6 @@ body {
   padding: 0 20px;
   max-width: 375px;
 }
-
 
 @media screen and (min-width: 767.98px) {
   .container {

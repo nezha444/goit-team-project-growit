@@ -52,36 +52,13 @@
     }
 }
 
-.videoframe {
-    max-width: 335px;
-    max-height: 500px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+iframe {
+    min-width: 335px;
+    height: 500px;
     border-radius: 15px;
     margin-bottom: 20px;
     overflow: hidden; 
 }
-
-@media screen and (min-width: 768px) {
-  
-    .videoframe {
-        max-width: 614px;
-        max-height: 400px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-  
-    .videoframe {
-        max-width: 600px;
-        max-height: 400px;
-        margin-bottom: 0;
-    }
-}
-
-iframe {
-    min-width: 335px;
-    height: 500px;
-    }
 
 @media screen and (min-width: 768px) {
 
@@ -96,6 +73,7 @@ iframe {
     iframe {
         min-width: 600px;
         height: 400px;
+        margin-bottom: 0;
     }
 }
   
