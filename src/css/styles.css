@@ -21,7 +21,7 @@
 @import url('./buy-now.css');
 @import url('./thank-you.css');
 @import url('./leave-a-review-about-our-chocolate.css');
-/* @import url('./thank-you-for-your-feedback.css'); */
+@import url('./thank-you-for-your-feedback.css');
 /* @import url('./explore-our-new-chocolate-first.css'); */
 @import url('./buy-now.css');
 
@@ -62,4 +62,19 @@ body {
     padding: 0 32px;
     max-width: 1200px;
   }
+}
+
+.our-products-and-reviews-card-slider .swiper-pagination-bullet {
+  background: rgba(17, 17, 17, 0.1);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+}
+.our-products-and-reviews-card-slider .swiper-pagination-bullet-active {
+  background: var(--color-orange);
+  width: 28px;
+  height: 13px;
+  border-radius: 7px;
 }
