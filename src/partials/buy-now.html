@@ -15,59 +15,125 @@
               <source
                 media="(min-width: 1199.98px)"
                 srcset="
-                  ../img/desktop/buy-now-1.png       1x,
-                  ../img/desktop/2x/buy-now-1@2x.png 2x
+                  ./img/desktop/buy-now-1.png       1x,
+                  ./img/desktop/2x/buy-now-1@2x.png 2x
                 "
               />
               <source
                 media="(min-width: 767.98px)"
                 srcset="
-                  ../img/tablet/buy-now-1.png       1x,
-                  ../img/tablet/2x/buy-now-1@2x.png 2x
+                  ./img/tablet/buy-now-1.png       1x,
+                  ./img/tablet/2x/buy-now-1@2x.png 2x
                 "
               />
               <source
                 media="(max-width: 767px)"
                 srcset="
-                  ../img/mobile/buy-now-1.png       1x,
-                  ../img/mobile/2x/buy-now-1@2x.png 2x
+                  ./img/mobile/buy-now-1.png       1x,
+                  ./img/mobile/2x/buy-now-1@2x.png 2x
                 "
               />
               <img
                 class="buynow-img"
-                src=""
+                src="./img/mobile/buy-now-1.png"
                 alt="buynow image1"
                 loading="lazy"
               />
             </picture>
-            <button class="btn-buynow btn-selected" type="button">100g</button>
+            <button class="btn-buynow btn-selected" type="button">100 g</button>
+          </li>
+          <li class="buynow-item">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ./img/desktop/buy-now-2.png       1x,
+                  ./img/desktop/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ./img/tablet/buy-now-2.png       1x,
+                  ./img/tablet/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/mobile/buy-now-2.png       1x,
+                  ./img/mobile/2x/buy-now-2@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src="./img/mobile/buy-now-2.png"
+                alt="buynow image2"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">200 g</button>
+          </li>
+          <li class="buynow-item">
+            <picture>
+              <source
+                media="(min-width: 1199.98px)"
+                srcset="
+                  ./img/desktop/buy-now-3.png       1x,
+                  ./img/desktop/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 767.98px)"
+                srcset="
+                  ./img/tablet/buy-now-3.png       1x,
+                  ./img/tablet/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/mobile/buy-now-3.png       1x,
+                  ./img/mobile/2x/buy-now-3@2x.png 2x
+                "
+              />
+              <img
+                class="buynow-img"
+                src="./img/mobile/buy-now-3.png"
+                alt="buynow image3"
+                loading="lazy"
+              />
+            </picture>
+            <button class="btn-buynow btn-selected" type="button">300 g</button>
           </li>
         </ul>
-        <div class="buy-info">
+        <div class="buy-info-temp">
           <ul class="list buy-info">
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Personal information</p>
-              <input
-                class="modal-input modal-name"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-                pattern="[A-Za-z]{2,}"
-              />
-              <input
-                class="modal-input"
-                type="text"
-                name="surname"
-                id="surname"
-                placeholder="Surname"
-                required
-                pattern="[A-Za-z]{2,}"
-              />
+              <div class="fio">
+                <input
+                  class="modal-input modal-name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                  pattern="[A-Za-z]{2,}"
+                />
+                <input
+                  class="modal-input modal-surname"
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Surname"
+                  required
+                  pattern="[A-Za-z]{2,}"
+                />
+              </div>
             </li>
 
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Email</p>
               <input
                 class="modal-input"
@@ -76,39 +142,49 @@
                 id="emaile"
                 placeholder="Enter you email"
                 required
+                pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
               />
             </li>
 
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Phone number</p>
-              <input
-                class="modal-input modal-phone"
-                type="tel"
-                id="phone"
-                class="phone-input"
-                placeholder="Enter phone number"
-                required
-                pattern="[0-9]{10}"
-              />
-              <input type="hidden" id="country-code" name="country_code" />
+              <div class="phone-container">
+                <svg width="24" height="24" class="review-modal-icon-flag">
+                  <use
+                    href="./img/icons.svg#icon-ua"
+                    class="modal-icon-flag"
+                  ></use>
+                </svg>
+                <p class="phone-prefix">+380</p>
+                <div class="vr-line"></div>
+                <input
+                  type="tel"
+                  required
+                  pattern="[0-9]{7}"
+                  placeholder="Phone number"
+                  class="modal-input modal-phone"
+                />
+              </div>
             </li>
-            <li>
-              <p class="personal-info">Card Number</p>
 
-              <input
-                class="modal-input"
-                type="text"
-                id="cardNumber"
-                name="cardNumber"
-                placeholder="Enter card"
-                required
-                pattern="[0-9]{16}"
-              />
-              <svg class="input-card-icon" width="32" height="21">
-                <use href="../img/icons.svg#icon-mastercard"></use>
-              </svg>
+            <li class="buy-info-item">
+              <p class="personal-info">Card number</p>
+              <div class="card-input">
+                <input
+                  class="modal-input"
+                  type="text"
+                  id="cardNumber"
+                  name="cardNumber"
+                  placeholder="Enter card"
+                  required
+                  pattern="[0-9]{16}"
+                />
+                <svg class="input-card-icon" width="32" height="21">
+                  <use href="../img/icons.svg#icon-mastercard"></use>
+                </svg>
+              </div>
             </li>
-            <li>
+            <li class="buy-info-item">
               <p class="personal-info">Comment</p>
 
               <textarea
@@ -118,7 +194,7 @@
                 placeholder="Enter text"
               ></textarea>
             </li>
-            <li>
+            <li class="buy-info-item">
               <button type="submit" class="btn-buynow btn-buy-submit">
                 Submit
               </button>

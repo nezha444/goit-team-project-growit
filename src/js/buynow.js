@@ -1,11 +1,15 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-modal-open-buynow]'),
+      openModalBtns: document.querySelectorAll('[data-modal-open-buynow]'),
       closeModalBtn: document.querySelector('[data-modal-close]'),
       modal: document.querySelector('[data-modal-buynow]'),
     };
-  
-    refs.openModalBtn.addEventListener('click', toggleModal);
+    
+    refs.openModalBtns.forEach(btn => {
+      btn.addEventListener('click', toggleModal);
+    });
+
+    // refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
   
     function toggleModal() {
