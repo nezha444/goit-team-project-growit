@@ -24,12 +24,13 @@
 
 .review-list {
   padding-top: 42px;
-  margin-bottom: 50px;
+  margin-bottom: 94px;
 }
 
 .review-card {
   display: block;
   position: relative;
+  height: 200px;
   padding: 58px 24px 24px 42px;
   text-align: center;
   background: #ffffff;
