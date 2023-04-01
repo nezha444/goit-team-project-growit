@@ -4,7 +4,6 @@
     closeModalBtn: document.querySelector('[data-modal-close-buynow]'),
     modal: document.querySelector('[data-modal-buynow]'),
     submitBtn: document.querySelector('[data-modal-submit-buynow]'),
-nextModal: document.querySelector('[data-modal-thank-you]'),
   };
 
   
@@ -28,7 +27,7 @@ nextModal: document.querySelector('[data-modal-thank-you]'),
     const form = event.target.closest('#buynowmyForm');
     if (form.checkValidity()) {
       toggleModal();
-      refs.nextModal.classList.remove('is-hidden');
+      refs.submitBtn.classList.remove('is-hidden');
       document.body.classList.add('overflow');
     } else {
       form.reportValidity(); // show validation errors
