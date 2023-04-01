@@ -24,6 +24,7 @@
     transform: translate(-50%, -50%) scale(0.6);
 }
 
+
 body.overflow {
     overflow: hidden;
 }
@@ -67,12 +68,15 @@ body.overflow {
 }
 
 .modal-buy {
-    position: absolute;
+    position: fixed;
     width: 311px;
-    height: 1007px;
+    height: 100%;
+    overflow: auto;
     /* position: absolute; */
     /* next 3 - center in browser area */
     top: 50%;
+
+    /* 50% */
     left: 50%;
     /* transform: translate(-50%, -50%) scale(1); */
     transform: translate(-50%, -50%);
@@ -85,6 +89,9 @@ body.overflow {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 32px;
+    /* overflow: visible;
+    scroll-snap-type: y;
+    overflow-y: auto; */
 }
 
 .modal-close-btn {
@@ -189,6 +196,7 @@ body.overflow {
     padding: 14px 18px;
     outline: transparent;
     transition: border-color 250ms var(--cubic);
+    margin-top: 8px;
     margin-bottom: 18px;
 }
 
@@ -243,7 +251,7 @@ body.overflow {
     /* identical to box height, or 117% */
 
     letter-spacing: -0.02em;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .buy-now-form input::placeholder {
@@ -288,7 +296,7 @@ body.overflow {
     width: 109px;
     height: 41px;
     left: 24px;
-    top: 934px;
+    top: 954px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -327,11 +335,16 @@ body.overflow {
     .modal-buy {
         position: fixed;
         width: 609px;
-        height: 1058px;
+        height: 100%;
         max-width: 100vw;
+
+        /* top: calc(50% - 10px); */
+        overflow: auto;
+
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
+        /* scale(1) */
         border-radius: 15px;
         background-color: #FAFAFA;
         padding: 48px;
@@ -472,7 +485,7 @@ body.overflow {
         width: 133px;
         height: 45px;
         left: 40px;
-        top: 965px;
+        top: 975px;
 
         padding: 14px 40px;
     }
