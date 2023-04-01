@@ -18,6 +18,10 @@
   color: var(--color-orange);
 }
 
+.address{
+  font-style: normal;
+}
+
 .footer-title {
   color: var(--color-white);
   margin-bottom: 14px;
