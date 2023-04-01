@@ -1,12 +1,11 @@
 <div class="backdrop is-hidden animation-backdrop" data-modal-buynow>
-  <div class="modal">
-    <div id="myModal-buynow" class="modal">
-      <button class="modal-close-btn" data-modal-close>
+  <div class="modal-buy">
+    <div id="myModal-buynow" class="modal-buy">
+      <button class="modal-close-btn-bynow" data-modal-close-buynow>
         <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
+          <use href="./img/icons.svg#icon-close-btn"></use>
         </svg>
       </button>
-      <h1 class="visually-hidden"></h1>
       <h2 class="header-buynow"><span>BUY</span> NOW</h2>
       <form id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
         <ul class="list buynow-items">
@@ -180,7 +179,7 @@
                   pattern="[0-9]{16}"
                 />
                 <svg class="input-card-icon" width="32" height="21">
-                  <use href="../img/icons.svg#icon-mastercard"></use>
+                  <use href="./img/icons.svg#icon-mastercard"></use>
                 </svg>
               </div>
             </li>
@@ -195,7 +194,11 @@
               ></textarea>
             </li>
             <li class="buy-info-item">
-              <button type="submit" class="btn-buynow btn-buy-submit">
+              <button
+                type="submit"
+                class="btn-buynow btn-buy-submit"
+                data-modal-submit-buynow
+              >
                 Submit
               </button>
             </li>
