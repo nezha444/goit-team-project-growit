@@ -1,29 +1,37 @@
 (() => {
-    const refs = {
-      openModalBtns: document.querySelectorAll('[data-modal-open-buynow]'),
-      closeModalBtn: document.querySelector('[data-modal-close]'),
-      modal: document.querySelector('[data-modal-buynow]'),
-    };
-    
-    refs.openModalBtns.forEach(btn => {
-      btn.addEventListener('click', toggleModal);
-    });
+  const refs = {
+    openModalBtns: document.querySelectorAll('[data-modal-open-buynow]'),
+    closeModalBtn: document.querySelector('[data-modal-close-buynow]'),
+    modal: document.querySelector('[data-modal-buynow]'),
+    submitBtn: document.querySelector('[data-modal-submit-buynow]'),
+nextModal: document.querySelector('[data-modal-thank-you]'),
+  };
 
-    // refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
   
-    function toggleModal() {
-      refs.modal.classList.toggle('is-hidden');
-      document.body.classList.toggle('overflow'); //add class and disable scroll in CSS body.overflow
-    }
 
-    // function centerModal() {
-    //   var modal = document.getElementById("myModal-buynow");
-    //   modal.style.top = (window.innerHeight / 2) - (modal.offsetHeight / 2) + "px";
-    //   modal.style.left = (window.innerWidth / 2) - (modal.offsetWidth / 2) + "px";
-    // }
-    
-    // Вызвать функцию centerModal() при загрузке страницы и при изменении размера окна
-    // window.onload = centerModal;
-    // window.onresize = centerModal;
+  refs.openModalBtns.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  // refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('overflow'); //add class and disable scroll in CSS body.overflow
+    // body.overflow
+  }
+  refs.submitBtn.addEventListener('click', (event) => {
+    event.preventDefault(); // prevent the form from submitting
+  
+    // validate the form fields
+    const form = event.target.closest('#buynowmyForm');
+    if (form.checkValidity()) {
+      toggleModal();
+      refs.nextModal.classList.remove('is-hidden');
+      document.body.classList.add('overflow');
+    } else {
+      form.reportValidity(); // show validation errors
+    }
+  });
   })();

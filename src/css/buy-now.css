@@ -66,7 +66,41 @@ body.overflow {
 
 }
 
+.modal-buy {
+    position: absolute;
+    width: 311px;
+    height: 1007px;
+    /* position: absolute; */
+    /* next 3 - center in browser area */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%) scale(1); */
+    transform: translate(-50%, -50%);
+    /* max-width: 100vw; */
+    /* max-height: 100vw; */
+    /* min-height: 584px; */
+    border-radius: 15px;
+    background-color: #FAFAFA;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+}
+
 .modal-close-btn {
+    position: absolute;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    left: 273px;
+    top: 14px;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+}
+
+.modal-close-btn-bynow {
     position: absolute;
     display: flex;
     width: 24px;
@@ -80,6 +114,7 @@ body.overflow {
 }
 
 .modal-close-btn-icon {
+    border: none;
     width: 24px;
     height: 24px;
     transition: fill 250ms var(--cubic);
@@ -88,6 +123,11 @@ body.overflow {
 
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
+    fill: var(--color-orange);
+}
+
+.modal-close-btn-bynow:hover .modal-close-btn-bynow-icon,
+.modal-close-btn-bynow:focus .modal-close-btn-bynow-icon {
     fill: var(--color-orange);
 }
 
@@ -276,6 +316,31 @@ body.overflow {
     }
 
     .modal-close-btn {
+        position: absolute;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        left: 557px;
+        top: 24px;
+    }
+
+    .modal-buy {
+        position: fixed;
+        width: 609px;
+        height: 1058px;
+        max-width: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        border-radius: 15px;
+        background-color: #FAFAFA;
+        padding: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(22/18);
+    }
+
+    .modal-close-btn-bynow {
         position: absolute;
         display: flex;
         width: 28px;
