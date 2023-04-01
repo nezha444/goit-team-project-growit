@@ -23,8 +23,8 @@
     />
 
     
-    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-266a036d.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-86aec1ff.css">
+    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-2b21e31b.js"></script>
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-14577394.css">
   </head>
   <body>
     <header class="header">
@@ -1085,7 +1085,7 @@
     >
       Subscribe
     </button>
-    <button
+    <!-- <button
       href=""
       class="subscribe-button"
       type="button"
@@ -1108,7 +1108,7 @@
       data-modal-open-thank-you
     >
       thank-you
-    </button>
+    </button> -->
   </div>
 </section>
 
@@ -1196,14 +1196,13 @@
     <!-- modals -->
 
     <div class="backdrop is-hidden animation-backdrop" data-modal-buynow>
-  <div class="modal">
-    <div id="myModal-buynow" class="modal">
-      <button class="modal-close-btn" data-modal-close>
+  <div class="modal-buy">
+    <div id="myModal-buynow" class="modal-buy">
+      <button class="modal-close-btn-bynow" data-modal-close-buynow>
         <svg class="modal-close-btn-icon">
-          <use href="../img/icons.svg#icon-close-btn"></use>
+          <use href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-close-btn"></use>
         </svg>
       </button>
-      <h1 class="visually-hidden"></h1>
       <h2 class="header-buynow"><span>BUY</span> NOW</h2>
       <form id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
         <ul class="list buynow-items">
@@ -1350,7 +1349,7 @@
                   pattern="[0-9]{16}"
                 />
                 <svg class="input-card-icon" width="32" height="21">
-                  <use href="../img/icons.svg#icon-mastercard"></use>
+                  <use href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-mastercard"></use>
                 </svg>
               </div>
             </li>
@@ -1365,7 +1364,11 @@
               ></textarea>
             </li>
             <li class="buy-info-item">
-              <button type="submit" class="btn-buynow btn-buy-submit">
+              <button
+                type="submit"
+                class="btn-buynow btn-buy-submit"
+                data-modal-submit-buynow
+              >
                 Submit
               </button>
             </li>
