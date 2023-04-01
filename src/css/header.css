@@ -6,7 +6,6 @@
 .header {
   display: flex;
   padding: 25px 0 19px;
-
 }
 .page-heder-container {
   display: flex;
@@ -90,8 +89,8 @@
 }
 @media screen and (min-width: 1200px) {
   .page-heder-container {
-    display: flex;  
-}
+    display: flex;
+  }
   .burger-menu-btn {
     display: none;
     width: 32px;
@@ -99,14 +98,13 @@
   }
   .header {
     display: flex;
-    padding: 24px 0 32px; 
+    padding: 24px 0 32px;
   }
   .menu {
     display: flex;
     justify-content: center;
     gap: 24px;
     margin-left: 133px;
-    
   }
   .heder-logo {
     display: flex;
@@ -155,7 +153,7 @@
   .menu-link:focus {
     color: var(--color-orange);
   }
-  .heder-social-svg {
+  .social-item:not(:first-child) {
     margin-left: 20px;
   }
 }
@@ -209,9 +207,9 @@
   width: 28px;
   height: 28px;
   border: none;
-  background-color: transparent;  
+  background-color: transparent;
 }
-.modal-btm-close-icon { 
+.modal-btm-close-icon {
   fill: var(--color-white);
 }
 .mobile-menu-btn-closed:active > svg {
@@ -228,16 +226,16 @@
 }
 .social-list-link {
   margin-right: 20px;
-  fill: var(--color-white);  
+  fill: var(--color-white);
 }
 .social-list-link:focus {
   fill: var(--color-orange);
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu {    
-    width: 290px;    
+  .mobile-menu {
+    width: 290px;
     padding: 156px 83px 0 83px;
-    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);    
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
     z-index: 10;
   }
   .social-list-modal {
@@ -246,7 +244,7 @@
     left: 32px;
     bottom: 24px;
   }
-  .mobile-menu-btn-closed {    
+  .mobile-menu-btn-closed {
     top: 24px;
     right: 32px;
   }
