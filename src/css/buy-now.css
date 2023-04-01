@@ -120,23 +120,28 @@ body.overflow {
     border: none;
 }
 
-.modal-close-btn-icon {
+.buy-now-modal-close-btn-icon {
     border: none;
     width: 24px;
     height: 24px;
     transition: fill 250ms var(--cubic);
+    fill: var(--color-black);
 }
 
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
+.modal-close-btn-bynow:hover .buy-now-modal-close-btn-icon,
+.modal-close-btn-bynow:focus .buy-now-modal-close-btn-icon{
     fill: var(--color-orange);
 }
 
-.modal-close-btn-bynow:hover .modal-close-btn-bynow-icon,
+/* .modal-close-btn:hover .buy-now-modal-close-btn-icon,
+.modal-close-btn:focus .buy-now-modal-close-btn-icon {
+    fill: var(--color-orange);
+} */
+
+/* .modal-close-btn-bynow:hover .modal-close-btn-bynow-icon,
 .modal-close-btn-bynow:focus .modal-close-btn-bynow-icon {
     fill: var(--color-orange);
-}
+} */
 
 .buynow-img {
     height: 148px;
