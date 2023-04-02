@@ -23,8 +23,8 @@
     />
 
     
-    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-15d333a6.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-af936dc1.css">
+    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-172ab089.js"></script>
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-e56d0ab6.css">
   </head>
   <body>
     <header class="header">
@@ -1139,9 +1139,10 @@
         </svg>
       </button>
       <h2 class="header-buynow"><span>BUY</span> NOW</h2>
-      <form id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
-        <ul class="list buynow-items">
-          <li class="buynow-item">
+      <div id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
+        <div class="swiper">
+        <ul class="list buynow-items swiper-wrapper">
+          <li class="buynow-item swiper-slide">
             <picture>
               <source
                 media="(min-width: 1199.98px)"
@@ -1164,7 +1165,7 @@
             </picture>
             <button class="btn-buynow btn-selected" type="button">100 g</button>
           </li>
-          <li class="buynow-item">
+          <li class="buynow-item swiper-slide">
             <picture>
               <source
                 media="(min-width: 1199.98px)"
@@ -1187,7 +1188,7 @@
             </picture>
             <button class="btn-buynow btn-selected" type="button">200 g</button>
           </li>
-          <li class="buynow-item">
+          <li class="buynow-item swiper-slide">
             <picture>
               <source
                 media="(min-width: 1199.98px)"
@@ -1211,6 +1212,8 @@
             <button class="btn-buynow btn-selected" type="button">300 g</button>
           </li>
         </ul>
+        <div class="our-products-and-reviews-card-slider swiper-pagination"></div>
+        </div>
         <div class="buy-info-temp">
           <ul class="list buy-info">
             <li class="buy-info-item">
