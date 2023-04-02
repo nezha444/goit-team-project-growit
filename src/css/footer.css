@@ -37,8 +37,8 @@
 .footer-right {
   display: flex;
   align-items: flex-start;
-  gap: 112px;
   margin-bottom: 32px;
+  justify-content: space-between;
 }
 
 .contacts-list {

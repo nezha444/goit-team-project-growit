@@ -36,15 +36,26 @@
     display: none;
 }
 
+
+
+/* .t-p-item{
+    max-width: 335px;
+} */
+
+/* .t-p-item>picture{
+    display: flex;
+    justify-content: center;
+} */
+
 .top-sellers-img {
     border-radius: 15px;
-    height: 464px;
     width: 335px;
+    height: 424px;
 }
 
 .top-sellers-descr {
     margin-top: 20px;
-    width: 335px;
+    max-width: 100%;
     letter-spacing: -0.02em;
     color: var(--color-black);
 }
@@ -101,6 +112,7 @@
 
     .top-sellers-img {
         width: 344px;
+        height: 464px;
     }
 
     .top-sellers-items {
@@ -161,6 +173,7 @@
 
     .top-sellers-img {
         width: 368px;
+        height: 464px;
     }
 
     .top-sellers-items {
