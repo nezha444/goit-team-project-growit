@@ -219,10 +219,6 @@ body.overflow {
     margin-bottom: 18px;
 }
 
-.mw-buy-now-item-phon{
-    margin-bottom: 18px;
-}
-
 .mw-buy-now-item-card{
     margin-bottom: 18px;
 }
@@ -320,8 +316,9 @@ body.overflow {
 
 
 .mw-buynow-for-margin:focus,
-.mw-buynow-for-margin:active{
-    outline: 1px solid var(--color-orange);
+.mw-buynow-for-margin:active,
+.mw-buynow-for-margin:hover{
+    outline: 1.5px solid var(--color-orange);
 
 }
 
@@ -471,7 +468,5 @@ body.overflow {
     height: 107px;
     width: 120px;
 }
-
-
 }
 
