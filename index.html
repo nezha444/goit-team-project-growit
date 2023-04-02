@@ -23,8 +23,8 @@
     />
 
     
-    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-172ab089.js"></script>
-    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-09c720db.css">
+    <script type="module" crossorigin src="/goit-team-project-growit/assets/index-cc4bce44.js"></script>
+    <link rel="stylesheet" href="/goit-team-project-growit/assets/index-8febb97a.css">
   </head>
   <body>
     <header class="header">
@@ -1084,6 +1084,7 @@
               href="https://www.instagram.com/"
               rel="noopener noreferer"
               target="_blank"
+              aria-label="linl to instagram"
             >
               <svg class="footer-icon" width="22" height="22">
                 <use href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-instagram"></use>
@@ -1096,6 +1097,7 @@
               href="https://twitter.com/"
               rel="noopener noreferer"
               target="_blank"
+              aria-label="link to twitter"
               ><svg class="footer-icon" width="22" height="22">
                 <use href="/goit-team-project-growit/assets/icons-46e11962.svg#icon-twitter"></use>
               </svg>
@@ -1105,23 +1107,39 @@
       </div>
     </div>
 
-    <div class="line"></div>
-
     <ul class="links-list">
       <li>
-        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html" class="footer-link" aria-label="link to home page"
+          >Home</a
+        >
       </li>
       <li>
-        <a href="#howitsmade" class="footer-link">How it’s made?</a>
+        <a
+          href="#howitsmade"
+          class="footer-link"
+          aria-label="link to section how it`s made"
+          >How it’s made?</a
+        >
       </li>
       <li>
-        <a href="#ourproducts" class="footer-link">Our products</a>
+        <a
+          href="#ourproducts"
+          class="footer-link"
+          aria-label="link to section our products"
+          >Our products</a
+        >
       </li>
       <li>
-        <a href="#topsellers" class="footer-link">Top sellers</a>
+        <a href="#topsellers" class="footer-link" aria-label="link to section
+        top sellers">Top sellers</a>
       </li>
       <li>
-        <a href="#review" class="footer-link">Chocolate is loved</a>
+        <a
+          href="#review"
+          class="footer-link"
+          aria-label="link to section reviews"
+          >Chocolate is loved</a
+        >
       </li>
     </ul>
   </div>
@@ -1217,7 +1235,7 @@
         <div class="buy-info-temp">
           <ul class="list buy-info">
             <li class="buy-info-item">
-              <!-- <p class="personal-info">Personal information</p> -->
+
               <label class="personal-info" for="name surname"
                 >Personal information
                 <div class="fio">
@@ -1231,7 +1249,7 @@
                     required
                     pattern="[A-Za-z]{2,}"
                   />
-                  <!-- <label class="personal-info" for="surname"> -->
+
                   <input
                     class="modal-input modal-surname"
                     type="text"
@@ -1242,13 +1260,11 @@
                     required
                     pattern="[A-Za-z]{2,}"
                   />
-                  <!-- </label> -->
                 </div></label
               >
             </li>
 
             <li class="buy-info-item">
-              <!-- <p class="personal-info">Email</p> -->
               <label class="personal-info" for="emaile"
                 >Email
                 <input
@@ -1264,7 +1280,6 @@
             </li>
 
             <li class="buy-info-item">
-              <!-- <p class="personal-info">Phone number</p> -->
               <label class="personal-info" for="phone"
                 >Phone number
                 <div class="phone-container">
@@ -1290,7 +1305,6 @@
             </li>
 
             <li class="buy-info-item">
-              <!-- <p class="personal-info">Card number</p> -->
               <label class="personal-info" for="cardNumber"
                 >Card number
                 <div class="card-input">
@@ -1311,7 +1325,6 @@
             </li>
 
             <li class="buy-info-item">
-              <!-- <p class="personal-info">Comment</p> -->
               <label class="personal-info" for="comment"
                 >Comment
                 <textarea
@@ -1331,7 +1344,6 @@
               >
                 Submit
               </button>
-              <!-- data-modal-open-thank-you -->
             </li>
           </ul>
         </div>
@@ -1384,6 +1396,7 @@
     <button
       type="button"
       class="close-btn-review"
+      aria-label="close button"
       data-modal-close-leave-a-review
     >
       <svg width="14" height="14" class="review-close-btn-icon">
@@ -1435,7 +1448,15 @@
         class="review-textarea"
       ></textarea>
     </form>
-    <button type="submit" class="btn-submit-review" data-modal-open-feedback data-modal-leave-a-review-close-send>Send</button>
+    <button
+      type="submit"
+      class="btn-submit-review"
+      aria-label="button to send a review"
+      data-modal-open-feedback
+      data-modal-leave-a-review-close-send
+    >
+      Send
+    </button>
   </div>
 </div>
 
