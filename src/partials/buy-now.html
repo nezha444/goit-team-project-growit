@@ -110,7 +110,7 @@
           <ul class="list buy-info">
             <li class="buy-info-item">
               <!-- <p class="personal-info">Personal information</p> -->
-              <label class="personal-info" for="name"
+              <label class="personal-info" for="name surname"
                 >Personal information
                 <div class="fio">
                   <input
@@ -119,20 +119,24 @@
                     name="name"
                     id="name"
                     placeholder="Name"
+                    title="English letters at least two characters"
                     required
                     pattern="[A-Za-z]{2,}"
                   />
-                  <label class="personal-info" for="surname">
-                    <input
-                      class="modal-input modal-surname"
-                      type="text"
-                      name="surname"
-                      id="surname"
-                      placeholder="Surname"
-                      required
-                      pattern="[A-Za-z]{2,}"
-                  /></label></div
-              ></label>
+                  <!-- <label class="personal-info" for="surname"> -->
+                  <input
+                    class="modal-input modal-surname"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Surname"
+                    title="English letters at least two characters"
+                    required
+                    pattern="[A-Za-z]{2,}"
+                  />
+                  <!-- </label> -->
+                </div></label
+              >
             </li>
 
             <li class="buy-info-item">
@@ -145,6 +149,7 @@
                   name="email"
                   id="emaile"
                   placeholder="Enter you email"
+                  title="Use email format stevenli@email.com"
                   required
                   pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
               /></label>
@@ -155,7 +160,7 @@
               <label class="personal-info" for="phone"
                 >Phone number
                 <div class="phone-container">
-                  <svg width="24" height="24" class="review-modal-icon-flag">
+                  <svg width="24" height="24" class="modal-icon-flag">
                     <use
                       href="./img/icons.svg#icon-ua"
                       class="modal-icon-flag"
@@ -167,8 +172,9 @@
                     type="tel"
                     id="phone"
                     name="phone"
+                    title="At least 7 digits"
                     required
-                    pattern="[0-9]{7}"
+                    pattern="[0-9]{7,}"
                     placeholder="Phone number"
                     class="modal-input modal-phone"
                   /></div
@@ -186,6 +192,7 @@
                     id="cardNumber"
                     name="cardNumber"
                     placeholder="Enter card"
+                    title="16 digits"
                     required
                     pattern="[0-9]{16}"
                   />
@@ -216,6 +223,7 @@
               >
                 Submit
               </button>
+              <!-- data-modal-open-thank-you -->
             </li>
           </ul>
         </div>
