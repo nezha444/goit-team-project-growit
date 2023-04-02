@@ -165,10 +165,10 @@ body.overflow {
     border-radius: 15px;
 }
 
-/* .buynow-item:last-child,
+.buynow-item:last-child,
 .buynow-item:nth-child(2) {
     display: none;
-} */
+}
 
 .btn-selected {
     padding: 8px 27px;
@@ -399,7 +399,7 @@ body.overflow {
         justify-content: center;
         align-items: center;
         gap: 16px;
-        width: 513px;
+        width: 160px;
         height: 196px;
         margin: 0 auto;
         margin-bottom: 40px;
