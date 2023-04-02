@@ -18,7 +18,7 @@
   color: var(--color-orange);
 }
 
-.address{
+.address {
   font-style: normal;
 }
 
@@ -29,8 +29,14 @@
   letter-spacing: -0.02em;
 }
 
+.footer-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 32px;
+}
+
 .footer-right {
   display: flex;
+  align-items: flex-start;
   gap: 112px;
   margin-bottom: 32px;
 }
@@ -44,6 +50,7 @@
 }
 
 .footer-contact-link {
+  display: block;
   transition: color 250ms var(--cubic);
 }
 
@@ -122,6 +129,7 @@
 
   .footer-right {
     gap: 50px;
+    margin-bottom: 50px;
   }
 
   .icons-list {
