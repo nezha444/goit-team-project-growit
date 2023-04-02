@@ -86,7 +86,7 @@
 }
 @media screen and (min-width: 1200px) {
   .social-heder-link {
-    
+    display: block;
   
   }
   .page-heder-container {
@@ -229,6 +229,7 @@
   bottom: 20px;
 }
 .social-list-link {
+  display: block;
   margin-right: 20px;
   fill: var(--color-white);
 }
