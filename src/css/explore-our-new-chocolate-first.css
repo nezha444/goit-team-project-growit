@@ -5,8 +5,9 @@
     height: 350px;
     max-height: 100%;
     padding: 32px 24px;
-    background-image: url(../img/mobile/pop-up-choco-top-bg.jpg);
+    background-image: url("../img/mobile/pop-up-choco-top-bg.jpg");
     background-repeat: no-repeat;
+    background-size: 311px 169px;
 
 }
 
@@ -21,6 +22,7 @@
 @media screen and (min-width: 767.98px) {
     .explore.modal {
         background-image: url("../img/tablet/pop-up-choco-top-bg.png");
+        background-size: 538px 196px;
     }
 
     @media (min-device-pixel-ratio: 2),
