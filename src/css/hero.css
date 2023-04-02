@@ -60,6 +60,8 @@
      font-size: 14px;
      line-height: calc(17 / 14);
      transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+     width: 120px;
+height: 41px;
  }
 
  .btn-buy:hover,
@@ -75,8 +77,10 @@
      color: var(--color-white);
      border: 1px solid var(--color-white);
      border-radius: 100px;
-     padding: 12px 28px;
+     padding: 11px 27px;
      transition: border 250ms var(--cubic);
+     width: 159px;
+height: 41px;
  }
 
  .how-its-made-button-hero:hover,
@@ -199,10 +203,14 @@
 
      .btn-buy {
          padding: 14px 40px;
+         width: 144px;
+height: 45px;
      }
 
      .how-its-made-button-hero {
-         padding: 14px 40px;
+         padding: 13px 39px;
+         width: 183px;
+height: 45px;
      }
 
      .scroll-down-div svg {
