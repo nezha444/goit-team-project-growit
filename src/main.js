@@ -10,6 +10,7 @@ import './js/mobile-menu.js';
 import './js/our-products-slider.js';
 
 import './js/review-slider.js';
-// import './js/buy-now-slider';
+
 import './js/thank-you-for-your-feedback.js';
+
 import './js/buynow.js';

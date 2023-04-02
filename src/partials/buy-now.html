@@ -1,14 +1,16 @@
 <div class="backdrop is-hidden animation-backdrop" data-modal-buynow>
-  <div class="modal-buy">
-    <div id="myModal-buynow" class="modal-buy">
-      <button class="modal-close-btn-bynow" data-modal-close-buynow>
-        <svg class="buy-now-modal-close-btn-icon">
-          <use href="./img/icons.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-      <h2 class="header-buynow"><span>BUY</span> NOW</h2>
-      <div id="buynowmyForm" class="buy-now-form" onsubmit="submitForm(event)">
-        <div class="swiper">
+
+  <div class="modal-buy-now">
+
+    <button class="modal-close-btn-bynow" data-modal-close-buynow>
+      <svg class="buy-now-modal-close-btn-icon">
+        <use href="./img/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <h2 class="header-buynow"><span>BUY</span> NOW</h2>
+
+      <div class="swiperbuy">
         <ul class="list buynow-items swiper-wrapper">
           <li class="buynow-item swiper-slide">
             <picture>
@@ -107,124 +109,69 @@
             <button class="btn-buynow btn-selected" type="button">300 g</button>
           </li>
         </ul>
-        <div class="our-products-and-reviews-card-slider swiper-pagination"></div>
-        </div>
-        <div class="buy-info-temp">
-          <ul class="list buy-info">
-            <li class="buy-info-item">
+        <div class="swiperbuy-pagination" id="swiperbuy-pagination"></div>
+      </div>
 
-              <label class="personal-info" for="name surname"
-                >Personal information
-                <div class="fio">
-                  <input
-                    class="modal-input modal-name"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    title="English letters at least two characters"
-                    required
-                    pattern="[A-Za-z]{2,}"
-                  />
+    <form class="mw-buy-now-form" onsubmit="submitForm(event)">
+      
+      <label for="mw-boy-now-input-name" class="mw-buy-now-item-name label-for-mw-buynuw">
+        Personal information
+      </label>
 
-                  <input
-                    class="modal-input modal-surname"
-                    type="text"
-                    name="surname"
-                    id="surname"
-                    placeholder="Surname"
-                    title="English letters at least two characters"
-                    required
-                    pattern="[A-Za-z]{2,}"
-                  />
-                </div></label
-              >
-            </li>
+      <div class="mw-buy-now-cont">
+          <input id="mw-boy-now-input-name" type="text" class="mw-buy-now-input-name mw-buynow-for-margin" placeholder="Name" require>
+        
+        <label for="mw-boy-now-input-surname" class="mw-buy-now-item-surname visually-hidden label-for-mw-buynuw">
+          Surname
+        </label>
+        <input id="mw-boy-now-input-surname" type="text" class="mw-buy-now-input-surname mw-buynow-for-margin" placeholder="Surname" require>
+      </div>
 
-            <li class="buy-info-item">
-              <label class="personal-info" for="emaile"
-                >Email
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="email"
-                  id="emaile"
-                  placeholder="Enter you email"
-                  title="Use email format stevenli@email.com"
-                  required
-                  pattern="([a-zA-Z0-9_.-]{1,})@([a-zA-Z]{1,}).([a-zA-Z]{2,8})"
-              /></label>
-            </li>
+      <label class="mw-buy-now-item-email label-for-mw-buynuw">
+        Email
+        <input type="email" class="mw-buy-now-input-email mw-buynow-for-margin" placeholder="Enter your email" require>
+      </label>
 
-            <li class="buy-info-item">
-              <label class="personal-info" for="phone"
-                >Phone number
-                <div class="phone-container">
-                  <svg width="24" height="24" class="modal-icon-flag">
-                    <use
-                      href="./img/icons.svg#icon-ua"
-                      class="modal-icon-flag"
-                    ></use>
-                  </svg>
-                  <p class="phone-prefix">+380</p>
-                  <div class="vr-line"></div>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    title="At least 7 digits"
-                    required
-                    pattern="[0-9]{7,}"
-                    placeholder="Phone number"
-                    class="modal-input modal-phone"
-                  /></div
-              ></label>
-            </li>
+      <label class="mw-buy-now-item-phone label-for-mw-buynuw">
+        Phone number
+        <input type="tel" class="mw-buy-now-input-phone mw-buynow-for-margin" placeholder="Phone number" require>
+        <span class="mw-buy-now-phone-number-for-code">
+          <svg width="24" height="24" class="mw-buy-now-icon-flag">
+            <use
+              href="./img/icons.svg#icon-ua"
+            ></use>
+          </svg>
+          <span class="mw-buy-now-phone-number-tag-ua">+380</span>
+        </span>
+      </label>
 
-            <li class="buy-info-item">
-              <label class="personal-info" for="cardNumber"
-                >Card number
-                <div class="card-input">
-                  <input
-                    class="modal-input"
-                    type="text"
-                    id="cardNumber"
-                    name="cardNumber"
-                    placeholder="Enter card"
-                    title="16 digits"
-                    required
-                    pattern="[0-9]{16}"
-                  />
-                  <svg class="input-card-icon" width="32" height="21">
-                    <use href="./img/icons.svg#icon-mastercard"></use>
-                  </svg></div
-              ></label>
-            </li>
+      <label class="mw-buy-now-item-card label-for-mw-buynuw">
+        Card number
+        <input type="tel" maxlength="16" inputmode="numeric" class="mw-buy-now-input-card mw-buynow-for-margin" placeholder="Enter  card" require>
+        <svg width="24" height="24" class="mw-buy-now-icon-mastercard">
+          <use href="./img/icons.svg#icon-mastercard">
+          </use>
+        </svg>
+      </label>
 
-            <li class="buy-info-item">
-              <label class="personal-info" for="comment"
-                >Comment
-                <textarea
-                  class="modal-input modal-comment"
-                  id="comment"
-                  name="comment"
-                  placeholder="Enter text"
-                ></textarea>
-              </label>
-            </li>
-            <li class="buy-info-item">
-              <button
-                type="submit"
-                class="btn-buynow btn-buy-submit"
-                data-modal-submit-buynow
-                data-modal-open-thank-you
-              >
-                Submit
-              </button>
-            </li>
-          </ul>
-        </div>
-      </form>
-    </div>
+      <label class="mw-buy-now-item-textarea">
+        Comment
+        <textarea name="" class="mw-buy-now-textarea mw-buynow-for-margin" placeholder="Enter text">
+        </textarea>
+      </label>
+      <!-- button submit -->
+      <button
+      type="submit"
+      class="mw-buy-now-btn-submit"
+      data-modal-open-thank-you
+      data-modal-submit-buynow
+      data-modal-close-after-send
+      data-modal-submit-buynow
+      >
+      Submit
+      </button>
+    </form>
+
   </div>
+
 </div>

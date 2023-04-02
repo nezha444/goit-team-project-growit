@@ -5,9 +5,17 @@
   height: 350px;
   width: 311px;
 }
+.close-thank-you{
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (min-width: 767.98px) {
   .modal-thank-you {
+    top: 50%;
+    left: 50%;
     width: 516px;
     height: 414px;
   }
@@ -47,8 +55,8 @@
   height: 8px;
   transition: fill 250ms var(--cubic);
 }
-.modal-close-btn-icon:hover,
-.modal-close-btn-icon:focus {
+.modal-close-btn:hover svg,
+.modal-close-btn:focus svg{
   fill: var(--color-white);
 }
 @media screen and (min-width: 767.98px) {
@@ -84,11 +92,7 @@
 .choco-bar-position {
   position: absolute;
   left: 0;
-  bottom: 0;
-}
-@media screen and (min-width: 767.98px) {
-  .choco-bar-position {
-  }
+  bottom: -1px;
 }
 .choco-bar {
   border-radius: 15px;
