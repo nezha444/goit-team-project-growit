@@ -13,4 +13,6 @@ const swiper = new Swiper('.swiper', {
     },
     768: { slidesPerView: 2 },
   },
+  // loop: true,
+  slideToClickedSlide: true,
 });
