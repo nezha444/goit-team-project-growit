@@ -1,0 +1,112 @@
+.modal-thank-you {
+  position: relative;
+  background-color: var(--color-orange);
+  padding: 0;
+  height: 350px;
+  width: 311px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .modal-thank-you {
+    width: 516px;
+    height: 414px;
+  }
+}
+
+.happy {
+  line-height: calc(16 / 14);
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+}
+@media screen and (min-width: 767.98px) {
+  .happy {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+  .happy > br {
+    display: none;
+  }
+}
+.thank-you {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+@media screen and (min-width: 767.98px) {
+  .thank-you {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+.ty-close-btn-icon {
+  border: 0;
+  fill: var(--color-orange);
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms var(--cubic);
+}
+
+@media screen and (min-width: 767.98px) {
+  .modal-close-btn-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+.ty-close-btn {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: 14px;
+  top: 14px;
+  border: 0;
+  background-color: var(--color-light-orange);
+  border-radius: 50%;
+  transition: background-color 250ms var(--cubic);
+}
+.ty-close-btn:hover,
+.ty-close-btn:focus {
+  background-color: var(--color-light-orange);
+}
+
+@media screen and (min-width: 767.98px) {
+  .modal-close-btn {
+    right: 24px;
+    top: 24px;
+    width: 38px;
+    height: 38px;
+  }
+}
+.choco-bar-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 767.98px) {
+  .choco-bar-position {
+  }
+}
+.choco-bar {
+  border-radius: 15px;
+}
+.to-try {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 229px;
+  height: 88px;
+  left: 58px;
+  top: 84px;
+}
+@media screen and (min-width: 767.98px) {
+  .to-try {
+    width: 297px;
+    left: 170px;
+    top: 163px;
+  }
+}
