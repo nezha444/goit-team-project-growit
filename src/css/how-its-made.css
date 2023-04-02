@@ -41,7 +41,7 @@
 }
     
 .title-howitsmade>span {
-    color: #fd9222 ;
+    color: var(--color-orange);
 }
 
 
@@ -53,11 +53,18 @@
 }
 
 iframe {
-    min-width: 335px;
-    height: 500px;
+    max-width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
     overflow: hidden; 
+}
+
+@media screen and (min-width: 375px) {
+
+    iframe {
+        min-width: 335px;
+        height: 500px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +87,7 @@ iframe {
 .recepie-howitsmade {
     max-width: 335px;
     max-height: 456px;
-    background-color: var(color-white);
+    background-color: var(--color-white);
     border-radius: 15px;
     padding: 20px 14px;
 }
@@ -137,7 +144,6 @@ iframe {
 @media screen and (min-width: 1200px) {
     .recepie-list {
         gap: 24px;
-
     }
 }
     
@@ -150,7 +156,6 @@ iframe {
 
     
 .recepie-step::before {
-    position: absolute;
     display: block;
     content: "";
     width: 8px;

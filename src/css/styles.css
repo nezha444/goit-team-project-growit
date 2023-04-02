@@ -33,6 +33,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: calc(18 / 14);
+  background-color: #fafafa;
 }
 
 :root {

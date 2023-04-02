@@ -129,7 +129,7 @@ body.overflow {
 }
 
 .modal-close-btn-bynow:hover .buy-now-modal-close-btn-icon,
-.modal-close-btn-bynow:focus .buy-now-modal-close-btn-icon{
+.modal-close-btn-bynow:focus .buy-now-modal-close-btn-icon {
     fill: var(--color-orange);
 }
 
@@ -165,10 +165,10 @@ body.overflow {
     border-radius: 15px;
 }
 
-.buynow-item:last-child,
+/* .buynow-item:last-child,
 .buynow-item:nth-child(2) {
     display: none;
-}
+} */
 
 .btn-selected {
     padding: 8px 27px;
@@ -223,13 +223,13 @@ body.overflow {
     border-left: 2px solid rgba(64, 64, 64, 0.3);
     height: 24px;
     position: absolute;
-    left: 104px;
-    top: 10px;
+    left: 94px;
+    top: 18px;
 }
 
 .phone-prefix {
     position: absolute;
-    top: 14px;
+    top: 20px;
     left: 50px;
     color: #000;
     font-weight: 500;
@@ -240,7 +240,7 @@ body.overflow {
 
 .modal-icon-flag {
     position: absolute;
-    top: 11px;
+    top: 18px;
     left: 18px;
 }
 
@@ -273,7 +273,7 @@ body.overflow {
     width: 32px;
     height: 21px;
     left: 217px;
-    top: 12px;
+    top: 20px;
 }
 
 .modal-name {
@@ -336,6 +336,8 @@ body.overflow {
         left: 557px;
         top: 24px;
     }
+
+
 
     .modal-buy {
         position: fixed;
