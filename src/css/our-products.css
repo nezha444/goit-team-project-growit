@@ -148,7 +148,7 @@
         align-items: center;
         gap: 13px;
     } */
-    .our-products-card-slider .swiper-pagination-bullet {
+    .swiper-pagination-bullet {
         background: rgba(17, 17, 17, 0.1);
         width: 13px;
         height: 13px;
@@ -158,7 +158,7 @@
         transition: width 250ms var(--cubic), border-radius 250ms var(--cubic);
     }
     }
-    .our-products-card-slider .swiper-pagination-bullet-active {
+    .swiper-pagination-bullet-active {
         background: var(--color-orange);
         width: 28px;
         height: 13px;
