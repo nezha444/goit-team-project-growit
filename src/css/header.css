@@ -10,10 +10,7 @@
 .page-heder-container {
   display: flex;
 }
-.heder-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.heder-nav {  
   align-items: center;
   margin-right: 130px;
 }
@@ -88,6 +85,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .social-heder-link {
+    
+  
+  }
   .page-heder-container {
     display: flex;
   }
@@ -131,6 +132,7 @@
     margin-left: 137px;
   }
   .social-heder-link {
+    display: block;
     fill: var(--color-black);
     transition: 250ms var(--cubic);
   }
@@ -181,8 +183,7 @@
 }
 .menu-modal {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
+  justify-content: space-between;  
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -208,6 +209,9 @@
   height: 28px;
   border: none;
   background-color: transparent;
+}
+.menu-modal-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .modal-btm-close-icon {
   fill: var(--color-white);
