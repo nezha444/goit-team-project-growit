@@ -130,7 +130,13 @@
     font-size: 14px;
     line-height: 1.22;
 }
-
+.explore-btn{
+    transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+.explore-btn:hover{
+    background-color: var(--color-light-orange);
+    color: var(--color-orange);
+}
 @media screen and (min-width: 767.98px) {
     .explore.modal {
         width: 538px;
