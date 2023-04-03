@@ -65,7 +65,8 @@ height: 41px;
  }
 
  .btn-buy:hover,
- .btn-buy:active {
+ .btn-buy:active,
+ .btn-buy:focus {
      background-color: var(--color-light-orange);
      color: var(--color-orange);
  }
@@ -87,7 +88,8 @@ line-height: calc(17/14);
  }
 
  .how-its-made-button-hero:hover,
- .how-its-made-button-hero:active {
+ .how-its-made-button-hero:active,
+ .how-its-made-button-hero:focus {
      border-color: var(--color-orange);
      color: var(--color-orange);
 }
@@ -111,7 +113,8 @@ line-height: calc(17/14);
     }
     
     .scroll-down:hover .hero_svg,
-    .scroll-down:hover .hero_svg{
+    .scroll-down:active .hero_svg,
+    .scroll-down:focus .hero_svg{
         background-color: var(--color-orange);
     }
     
@@ -197,13 +200,13 @@ line-height: calc(17/14);
      .btn-buy {
          padding: 14px 40px;
          width: 144px;
-height: 45px;
+height: 43px;
      }
 
      .how-its-made-button-hero {
          padding: 13px 39px;
          width: 183px;
-height: 45px;
+height: 43px;
      }
 
      .scroll-down-div svg {

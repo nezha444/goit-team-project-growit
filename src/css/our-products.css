@@ -1,13 +1,13 @@
 .our-products {
     width: 100%;
     overflow: hidden;
+    padding-bottom: 72px;
 }
 .our-products-wrapper {
     text-align: center;
-    padding-bottom: 72px;
 }
 .our-products-title {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;

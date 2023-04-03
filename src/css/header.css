@@ -2,20 +2,20 @@
   display: flex;
   align-items: center;
   height: 24px;
+  
+  min-width: 320px;
 }
 .header {
   display: flex;
   padding: 25px 0 19px;
 }
-.page-heder-container {
-  display: flex;
-}
+
 .heder-nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-right: 130px;
+  /* margin-right: 130px; */
 }
 .menu {
   display: none;
@@ -35,8 +35,21 @@
 .heder-logo {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
+
+  word-spacing: -4;
+  margin-left: -21px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.03em;
+  color: var(--color-black);
 }
 .burger-menu-btn {
+
+  margin-right: -25px;
+  
   display: flex;
   width: 32px;
   height: 32px;
@@ -46,16 +59,22 @@
   background: none;
   justify-content: center;
   align-items: center;
+  
 }
 .logo-tittle {
   font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(18 / 14);
-  margin-right: 4px;
+  /* margin-right: 4px; */
   letter-spacing: -0.03em;
   color: var(--color-black);
 }
+
+.logo-tittle-for-morgin{
+  margin-right: 4px;
+}
+
 .heder-social {
   display: none;
 }
@@ -65,7 +84,7 @@
     padding: 24px 0 32px;
   }
   .logo-tittle {
-    margin-right: 4px;
+
     font-style: italic;
     font-weight: 700;
     font-size: 14px;
@@ -108,19 +127,22 @@
     gap: 24px;
     margin-left: 133px;
   }
-  .heder-logo {
-    display: flex;
-    align-items: center;
+
+  .logo-tittle-for-morgin{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(20 / 18);
   }
+  
   .logo-tittle {
-    margin-right: 4px;
+    /* margin-right: 4px; */
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(20 / 18);
     letter-spacing: -0.03em;
-    width: 185px;
+
     color: var(--color-black);
   }
   .heder-nav {
