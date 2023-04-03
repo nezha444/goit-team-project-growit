@@ -57,10 +57,12 @@ iframe {
     border-radius: 15px;
     margin-bottom: 20px;
     overflow: hidden; 
-    min-width: 335px;
     height: 500px;
 }
-
+@media screen and (min-width:375px) {
+   iframe{ min-width: 335px;
+   }
+}
 @media screen and (min-width: 768px) {
 
     iframe {
